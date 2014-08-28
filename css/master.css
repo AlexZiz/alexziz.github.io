@@ -1,5 +1,7 @@
 body {
+	position: relative;
   background: url(../img/bac-body.png);
+  font-family: "Tahoma";
   color: #fff;
 }
 
@@ -9,10 +11,13 @@ body {
 }
 
 .logo,
-.top-text {
+.top-text,
+.right-text {
 	float: left;
 }
-.contacts {
+
+.contacts,
+.section-wrapper img {
 	float: right;
 }
 
@@ -22,20 +27,28 @@ body {
 	content: " ";
 }
 
-/*  Структура страницы
+h2,
+h3 {
+  margin: 20px 0;
+  font-size: 26px;
+}
+/*  Page strukture
 --------------------------*/
 
 /* Header
 --------------------------*/
 .top {
   padding: 1em;
-  min-height: 100px;
+  min-height: 130px;
+  z-index: 2;
   border-bottom: 0;
   background: url(../img/bac-top.png);
   color: #41caf5;
+  box-shadow: 0 0 30px rgba(3,3,3, 0.9);
 }
 
 .content {
+	position: relative;
   margin-right: auto;
   margin-left: auto;
   width: 960px;
@@ -64,20 +77,74 @@ body {
 --------------------------*/
 
 .top-menu {
-  color: #e9e9e9;
+	position: absolute;
+	left: 50%;
+	margin-left: -27%;
+  width: 53%;
+  z-index: 3;
+  /*border-radius: 8px;
+  box-shadow: 0 0 15px rgba(2,2,2,.99);
+  border: 3px solid #fff;*/
+  /*background: #263232;*/
   text-align: center;
+  color: #e9e9e9;
 }
 
 .top-menu li {
   display: inline-block;
-  padding: 20px 13px;
+  padding: 15px 13px;
   margin: 0;
-  width: 95px;
-  font-size: 11px;
+  background: #263232;
+  border-left: 3px solid #fff;
+  font-size: 13px;
+}
+.top-menu li:first-child {
+	/*border-left: none;*/
 }
 
 .top-menu a {
   text-decoration: none;
-  color: #b2b2b2;
+  color: #FFF;
 }
 
+/* CONTENT PAGE
+--------------------------*/
+
+.section-wrapper {
+  position: relative;
+  z-index: 1;
+  padding: 1em;
+  padding-top: 4em;
+  background: #fcfcfc;
+  color: #263232;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  text-align: justify;
+}
+
+.box {
+	float: right;
+	border: 3px solid #d2d7d7;
+	border-radius: 5px;
+}
+
+.description {
+  padding: 50px 0 50px;
+}
+
+.section-title {
+	text-transform: uppercase;
+}
+
+.grid {
+	width: 455px;
+}
+.step {
+	margin: 30px 0 0;
+	/*border-bottom: 1px solid #dadfdf;*/
+}
+/* footer
+--------------------------*/
+
+.footer {
+	background: url(../img/bac-top.png);
+}
