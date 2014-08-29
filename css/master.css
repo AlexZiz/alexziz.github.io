@@ -13,12 +13,17 @@ body {
 .logo,
 .top-text,
 .right-text,
-.top-menu li {
+.top-menu li,
+.fot-box,
+.vk,
+.fasebook,
+.instagram {
 	float: left;
 }
 
 .contacts,
-.section-wrapper img {
+.section-wrapper img,
+.contacts-footer {
 	float: right;
 }
 
@@ -28,31 +33,53 @@ body {
 	content: " ";
 }
 
-h2,
+h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 100 ;
+}
+
 h3 {
-  margin: 20px 0;
-  font-size: 26px;
+  margin: 20px 0 5;
+  font-size: 20px;
+  padding-left: 5px;
 }
 /*  Page strukture
 --------------------------*/
 
 /* Header
 --------------------------*/
-.top {
-  padding: 1em;
-  min-height: 130px;
-  z-index: 2;
-  border-bottom: 0;
-  background: #403f3f; /*url(../img/bac-top.png);*/
-  color: #41caf5;
-  box-shadow: 0 0 30px rgba(3,3,3, 0.9);
-}
 
 .content {
 	position: relative;
   margin-right: auto;
   margin-left: auto;
   width: 960px;
+}
+
+.top {
+	position: absolute;
+	width: 100%;
+  padding: 1em;
+  min-height: 130px;
+  z-index: 15;
+  border-bottom: 0;
+  background: url(../img/bac-top.png);
+  color: #41caf5; 
+  border-bottom: 3px solid #ffffff;
+
+  box-shadow: 0 0 10px rgba(3,3,3, 0.9);   /*rgba(3,3,3, 0.9); /*62,202,245,.6 -  варианты   */ 
+  -moz-box-shadow: 0 0 10px rgba(3,3,3, 0.9);
+  -webkit-box-shadow: 0 0 10px rgba(3,3,3, 0.9);
+
+/*градиент топовой части
+--------------------------*/
+
+/*background-image: -webkit-gradient(linear,left top, left bottom,from(#6a6868), color-stop(0.5,#545353), color-stop(0.7, #403f3f));
+  background-image: -moz-linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);
+  background-image: -o-linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);
+  background-image: -ms-linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);
+  background-image: linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);*/
 }
 
 .top-text {
@@ -83,30 +110,32 @@ h3 {
   left: 50%;
   margin-left: -30%;
   margin-top: 0.5em;
-  z-index: 3;
-  overflow: hidden;
-
-
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-
-  box-shadow: 0 0 10px rgba(79,79,79,.6);
-  -moz-box-shadow: 0 0 10px rgba(79,79,79,.6);
-  -webkit-box-shadow: 0 0 10px rgba(79,79,79,.6);
+  z-index: 10;
+  
 }
 
 .top-menu li {
   list-style: none;
   padding: 1em;
-  background-color: #6a6868;
+  overflow: hidden;
   border: 2px solid rgba(255,255,255,.7);
+  background: url(../img/bac-top-menu.png);
+  box-shadow: 0 0 10px rgba(79,79,79,.6);
+  -moz-box-shadow: 0 0 10px rgba(79,79,79,.6);
+  -webkit-box-shadow: 0 0 10px rgba(79,79,79,.6);
+}
 
-  background-image: -webkit-gradient(linear,left top, left bottom,from(#6a6868), color-stop(0.5,#545353), color-stop(0.7, #403f3f));
-  background-image: -moz-linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);
-  background-image: -o-linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);
-  background-image: -ms-linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);
-  background-image: linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);
+
+.top-menu li:first-child {
+	border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+}
+
+.top-menu li:last-child {
+	border-radius:  0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
 }
 
 .top-menu a {
@@ -115,16 +144,19 @@ h3 {
 }
 
 .top-menu li:hover {
-  border-bottom: 10px solid rgba(65,202,254,.7);
+	color: #fff;
+  box-shadow: inset 0px 0px 2px 4px rgba(65,202,254,.5);
+  -moz-box-shadow: inset 0px 0px 2px 4px rgba(65,202,254,.5);
+  -webkit-box-shadow: inset 0px 0px 2px 4px rgba(65,202,254,.5);
 }
+
 /* CONTENT PAGE
 --------------------------*/
 
 .section-wrapper {
-  /*position: relative;*/
-  /*z-index: 1;*/
   padding: 1em;
-  padding-top: 4em;
+  position: relative;
+  padding-top: 10em;
   background: #fcfcfc;
   color: #263232;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -133,7 +165,7 @@ h3 {
 
 .box {
 	float: right;
-	border: 3px solid #d2d7d7;
+	border: 5px solid #d2d7d7;
 	border-radius: 5px;
 }
 
@@ -150,11 +182,52 @@ h3 {
 }
 .step {
 	margin: 30px 0 0;
-	/*border-bottom: 1px solid #dadfdf;*/
+}
+
+.description h2 {
+	text-align: center;
+}
+
+.but-line {
+	margin-bottom: 1em;
+	padding: 3px;
+	background: #d4d4d4;
+	border-radius: 3px;
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px;
 }
 /* footer
 --------------------------*/
 
 .footer {
+	padding: 2em;
 	background: url(../img/bac-top.png);
 }
+
+.fot-box {
+  margin-left: 30px;
+}
+
+.fot-box:first-child {
+  margin-left: 0;
+}
+
+.social-text {
+	padding: 5px;
+	font-size: 20px;
+}
+
+.contacts-footer li {
+  margin: 3px;
+}
+
+.vk,
+.fasebook,
+.instagram {
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  background: url(../img/social.png);
+}
+
