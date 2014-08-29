@@ -23,7 +23,8 @@ body {
 
 .contacts,
 .section-wrapper img,
-.contacts-footer {
+.contacts-footer,
+.box {
 	float: right;
 }
 
@@ -63,27 +64,16 @@ h3 {
   padding: 1em;
   min-height: 130px;
   z-index: 15;
-  border-bottom: 0;
   background: url(../img/bac-top.png);
   color: #41caf5; 
-  border-bottom: 3px solid #ffffff;
-
-  box-shadow: 0 0 10px rgba(3,3,3, 0.9);   /*rgba(3,3,3, 0.9); /*62,202,245,.6 -  варианты   */ 
+  border-bottom: 2px solid rgba(255,255,255,.7);
+  box-shadow: 0 0 10px rgba(3,3,3, 0.9); 
   -moz-box-shadow: 0 0 10px rgba(3,3,3, 0.9);
   -webkit-box-shadow: 0 0 10px rgba(3,3,3, 0.9);
-
-/*градиент топовой части
---------------------------*/
-
-/*background-image: -webkit-gradient(linear,left top, left bottom,from(#6a6868), color-stop(0.5,#545353), color-stop(0.7, #403f3f));
-  background-image: -moz-linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);
-  background-image: -o-linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);
-  background-image: -ms-linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);
-  background-image: linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);*/
 }
 
 .top-text {
-	padding-left: 35px;
+	padding-left: 20px;
 	padding-top: 15px;
 	font-size: 35px;
 }
@@ -111,13 +101,18 @@ h3 {
   margin-left: -30%;
   margin-top: 0.5em;
   z-index: 10;
-  
 }
 
 .top-menu li {
   list-style: none;
+}
+
+.top-menu a {
+  display: block;
   padding: 1em;
   overflow: hidden;
+  text-decoration: none;
+  color: #eaeaea;
   border: 2px solid rgba(255,255,255,.7);
   background: url(../img/bac-top-menu.png);
   box-shadow: 0 0 10px rgba(79,79,79,.6);
@@ -125,36 +120,31 @@ h3 {
   -webkit-box-shadow: 0 0 10px rgba(79,79,79,.6);
 }
 
-
-.top-menu li:first-child {
+.top-menu a.first {
 	border-radius: 10px 0 0 10px;
   -moz-border-radius: 10px 0 0 10px;
   -webkit-border-radius: 10px 0 0 10px;
 }
 
-.top-menu li:last-child {
+.top-menu a.last {
 	border-radius:  0 10px 10px 0;
   -moz-border-radius: 0 10px 10px 0;
   -webkit-border-radius: 0 10px 10px 0;
 }
 
-.top-menu a {
-  text-decoration: none;
-  color: #eaeaea;
-}
-
-.top-menu li:hover {
-	color: #fff;
-  box-shadow: inset 0px 0px 2px 4px rgba(65,202,254,.5);
-  -moz-box-shadow: inset 0px 0px 2px 4px rgba(65,202,254,.5);
-  -webkit-box-shadow: inset 0px 0px 2px 4px rgba(65,202,254,.5);
+.top-menu a:hover {
+  background: #ffffff;
+  color: #020202;
+  box-shadow: inset 0px 0px 4px rgba(65,202,254,.5);
+  -moz-box-shadow: inset 0px 0px 4px rgba(65,202,254,.5);
+  -webkit-box-shadow: inset 0px 0px 4px rgba(65,202,254,.5);
 }
 
 /* CONTENT PAGE
 --------------------------*/
 
 .section-wrapper {
-  padding: 1em;
+  padding: 5em;
   position: relative;
   padding-top: 10em;
   background: #fcfcfc;
@@ -164,12 +154,18 @@ h3 {
 }
 
 .box {
-	float: right;
-	border: 5px solid #d2d7d7;
+	border: 9px solid #d2d7d7;
 	border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
-.description {
+.box img {
+  border: 1px solid #fff;
+}
+
+.description,
+.condition {
   padding: 50px 0 50px;
 }
 
@@ -178,7 +174,7 @@ h3 {
 }
 
 .grid {
-	width: 455px;
+	width: 410px;
 }
 .step {
 	margin: 30px 0 0;
@@ -200,8 +196,14 @@ h3 {
 --------------------------*/
 
 .footer {
+  position: absolute;
+  width: 100%;
 	padding: 2em;
 	background: url(../img/bac-top.png);
+  border-top: 2px solid rgba(255,255,255,.7);
+  box-shadow: 0 0 10px rgba(3,3,3, 0.9);   /*rgba(3,3,3, 0.9); /*62,202,245,.6 -  варианты   */ 
+  -moz-box-shadow: 0 0 10px rgba(3,3,3, 0.9);
+  -webkit-box-shadow: 0 0 10px rgba(3,3,3, 0.9);
 }
 
 .fot-box {
@@ -224,10 +226,24 @@ h3 {
 .vk,
 .fasebook,
 .instagram {
-  margin-left: 5px;
+  margin-left: 8px;
   width: 30px;
   height: 30px;
-  border: 1px solid #fff;
   background: url(../img/social.png);
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+.vk {
+  background-position: 0;
+}
+
+.fasebook {
+  background-position: -32px 0;
+}
+
+.instagram {
+  background-position: -63px 0;
 }
 
