@@ -1,5 +1,5 @@
 body {
-	position: relative;
+  position: relative;
   background: url(../img/bac-body.png);
   font-family: "Tahoma";
   color: #fff;
@@ -18,20 +18,20 @@ body {
 .vk,
 .fasebook,
 .instagram {
-	float: left;
+  float: left;
 }
 
 .contacts,
 .section-wrapper img,
 .contacts-footer,
 .box {
-	float: right;
+  float: right;
 }
 
 .cf:after {
-	display: table;
-	clear: both;
-	content: " ";
+  display: table;
+  clear: both;
+  content: " ";
 }
 
 h2 {
@@ -52,15 +52,15 @@ h3 {
 --------------------------*/
 
 .content {
-	position: relative;
+  position: relative;
   margin-right: auto;
   margin-left: auto;
   width: 960px;
 }
 
 .top {
-	position: absolute;
-	width: 100%;
+  position: absolute;
+  width: 100%;
   padding: 1em;
   min-height: 130px;
   z-index: 15;
@@ -73,9 +73,9 @@ h3 {
 }
 
 .top-text {
-	padding-left: 20px;
-	padding-top: 15px;
-	font-size: 35px;
+  padding-left: 20px;
+  padding-top: 15px;
+  font-size: 35px;
 }
 
 .top-text span {
@@ -121,7 +121,7 @@ h3 {
 }
 
 .top-menu a.first {
-	border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 10px;
   -moz-border-radius: 10px 0 0 10px;
   -webkit-border-radius: 10px 0 0 10px;
 }
@@ -154,8 +154,8 @@ h3 {
 }
 
 .box {
-	border: 9px solid #d2d7d7;
-	border-radius: 5px;
+  border: 9px solid #d2d7d7;
+  border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
@@ -170,36 +170,37 @@ h3 {
 }
 
 .section-title {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .grid {
-	width: 410px;
+  width: 410px;
 }
 .step {
-	margin: 30px 0 0;
+  margin: 30px 0 0;
 }
 
 .description h2 {
-	text-align: center;
+  text-align: center;
 }
 
 .but-line {
-	margin-bottom: 1em;
-	padding: 3px;
-	background: #d4d4d4;
-	border-radius: 3px;
-	-moz-border-radius: 3px; 
-	-webkit-border-radius: 3px;
+  margin-bottom: 1em;
+  padding: 3px;
+  background: #d4d4d4;
+  border-radius: 3px;
+  -moz-border-radius: 3px; 
+  -webkit-border-radius: 3px;
 }
+
 /* footer
 --------------------------*/
 
 .footer {
   position: absolute;
   width: 100%;
-	padding: 2em;
-	background: url(../img/bac-top.png);
+  padding: 2em;
+  background: url(../img/bac-top.png);
   border-top: 2px solid rgba(255,255,255,.7);
   box-shadow: 0 0 10px rgba(3,3,3, 0.9);   /*rgba(3,3,3, 0.9); /*62,202,245,.6 -  варианты   */ 
   -moz-box-shadow: 0 0 10px rgba(3,3,3, 0.9);
@@ -215,8 +216,8 @@ h3 {
 }
 
 .social-text {
-	padding: 5px;
-	font-size: 20px;
+  padding: 5px;
+  font-size: 20px;
 }
 
 .contacts-footer li {
