@@ -74,7 +74,7 @@ h3 {
 
 .top-text {
   padding-left: 20px;
-  padding-top: 15px;
+  padding-top: 5px;
   font-size: 35px;
 }
 
@@ -154,7 +154,7 @@ h3 {
 }
 
 .box {
-  border: 9px solid #d2d7d7;
+  border: 9px solid #eeeded;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -187,7 +187,7 @@ h3 {
 .but-line {
   margin-bottom: 1em;
   padding: 3px;
-  background: #d4d4d4;
+  background: #eeeded;
   border-radius: 3px;
   -moz-border-radius: 3px; 
   -webkit-border-radius: 3px;
