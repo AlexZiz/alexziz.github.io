@@ -12,7 +12,8 @@ body {
 
 .logo,
 .top-text,
-.right-text {
+.right-text,
+.top-menu li {
 	float: left;
 }
 
@@ -42,7 +43,7 @@ h3 {
   min-height: 130px;
   z-index: 2;
   border-bottom: 0;
-  background: url(../img/bac-top.png);
+  background: #403f3f; /*url(../img/bac-top.png);*/
   color: #41caf5;
   box-shadow: 0 0 30px rgba(3,3,3, 0.9);
 }
@@ -76,43 +77,52 @@ h3 {
 /* Top menu
 --------------------------*/
 
-.top-menu {
-	position: absolute;
-	left: 50%;
-	margin-left: -27%;
-  width: 53%;
+.top-menu {  
+  position: absolute;
+  display: block;
+  left: 50%;
+  margin-left: -30%;
+  margin-top: 0.5em;
   z-index: 3;
-  /*border-radius: 8px;
-  box-shadow: 0 0 15px rgba(2,2,2,.99);
-  border: 3px solid #fff;*/
-  /*background: #263232;*/
-  text-align: center;
-  color: #e9e9e9;
+  overflow: hidden;
+
+
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+
+  box-shadow: 0 0 10px rgba(79,79,79,.6);
+  -moz-box-shadow: 0 0 10px rgba(79,79,79,.6);
+  -webkit-box-shadow: 0 0 10px rgba(79,79,79,.6);
 }
 
 .top-menu li {
-  display: inline-block;
-  padding: 15px 13px;
-  margin: 0;
-  background: #263232;
-  border-left: 3px solid #fff;
-  font-size: 13px;
-}
-.top-menu li:first-child {
-	/*border-left: none;*/
+  list-style: none;
+  padding: 1em;
+  background-color: #6a6868;
+  border: 2px solid rgba(255,255,255,.7);
+
+  background-image: -webkit-gradient(linear,left top, left bottom,from(#6a6868), color-stop(0.5,#545353), color-stop(0.7, #403f3f));
+  background-image: -moz-linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);
+  background-image: -o-linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);
+  background-image: -ms-linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);
+  background-image: linear-gradient(#6a6868 0%, #545353 50%, #403f3f 70%);
 }
 
 .top-menu a {
   text-decoration: none;
-  color: #FFF;
+  color: #eaeaea;
 }
 
+.top-menu li:hover {
+  border-bottom: 10px solid rgba(65,202,254,.7);
+}
 /* CONTENT PAGE
 --------------------------*/
 
 .section-wrapper {
-  position: relative;
-  z-index: 1;
+  /*position: relative;*/
+  /*z-index: 1;*/
   padding: 1em;
   padding-top: 4em;
   background: #fcfcfc;
