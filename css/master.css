@@ -8,6 +8,13 @@ body {
   color: #fff;
 }
 
+.wrap {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 64em;
+}
+
 * {
   -moz-box-sizing:border-box;
   box-sizing:border-box;
@@ -44,13 +51,6 @@ h3 {
 /* TOP
 -----------------------------*/
 
-.wrap {
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  width: 64em;
-}
-
 .top {
   width: 100%;
   padding: 1em;
@@ -86,10 +86,6 @@ h3 {
   background: #05a1d2;
 }
 
-.top-menu ul {
-
-}
-
 .top-menu ul li {
   display: inline-block;
   margin-right: -0.2em;
@@ -106,65 +102,11 @@ h3 {
 
 }
 
-.div {
-  height: 100px;
-  margin: 2px;
-  background: #05a1d2;
-
-}
 
 /* CONTENT PAGE
 --------------------------*/
 
-.section-wrapper {
-  padding: 5em;
-  position: relative;
-  padding-top: 10em;
-  background: #fcfcfc;
-  color: #263232;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  text-align: justify;
-}
 
-.box {
-  border: 9px solid #eeeded;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-}
-
-.box img {
-  border: 1px solid #fff;
-}
-
-.description,
-.condition {
-  padding: 50px 0 50px;
-}
-
-.section-title {
-  text-transform: uppercase;
-}
-
-.grid {
-  width: 410px;
-}
-.step {
-  margin: 30px 0 0;
-}
-
-.description h2 {
-  text-align: center;
-}
-
-.but-line {
-  margin-bottom: 1em;
-  padding: 3px;
-  background: #eeeded;
-  border-radius: 3px;
-  -moz-border-radius: 3px; 
-  -webkit-border-radius: 3px;
-}
 
 /* footer
 --------------------------*/
