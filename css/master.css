@@ -1,6 +1,9 @@
+/*GENERAL STYLE
+-----------------------------------------------------------*/
+
 body {
   position: relative;
-  background: url(../img/bac-body.png);
+  background: #fff;
   font-family: "Tahoma";
   color: #fff;
 }
@@ -10,21 +13,11 @@ body {
   box-sizing:border-box;
 }
 
-.logo,
-.top-text,
-.right-text,
-.top-menu li,
-.fot-box,
-.vk,
-.fasebook,
-.instagram {
+.left {
   float: left;
 }
 
-.contacts,
-.section-wrapper img,
-.contacts-footer,
-.box {
+.right {
   float: right;
 }
 
@@ -45,31 +38,24 @@ h3 {
   font-size: 20px;
   padding-left: 5px;
 }
-/*  Page strukture
---------------------------*/
+/*  PAGE STRYKTYRE
+-----------------------------------------------------------*/
 
-/* Header
---------------------------*/
+/* TOP
+-----------------------------*/
 
-.content {
+.wrap {
   position: relative;
   margin-right: auto;
   margin-left: auto;
-  width: 960px;
+  width: 64em;
 }
 
 .top {
-  position: absolute;
   width: 100%;
   padding: 1em;
-  min-height: 130px;
-  z-index: 15;
-  background: url(../img/bac-top.png);
+  background: #4d4d4d;
   color: #41caf5; 
-  border-bottom: 2px solid rgba(255,255,255,.7);
-  box-shadow: 0 0 10px rgba(3,3,3, 0.9); 
-  -moz-box-shadow: 0 0 10px rgba(3,3,3, 0.9);
-  -webkit-box-shadow: 0 0 10px rgba(3,3,3, 0.9);
 }
 
 .top-text {
@@ -92,52 +78,39 @@ h3 {
 
 
 /* Top menu
---------------------------*/
+-----------------------------*/
 
-.top-menu {  
-  position: absolute;
-  display: block;
-  left: 50%;
-  margin-left: -30%;
-  margin-top: 0.5em;
-  z-index: 10;
+.top-menu {
+  padding: 1.25em;
+  text-align: center;
+  background: #05a1d2;
 }
 
-.top-menu li {
-  list-style: none;
+.top-menu ul {
+
+}
+
+.top-menu ul li {
+  display: inline-block;
+  margin-right: -0.2em;
 }
 
 .top-menu a {
   display: block;
   padding: 1em;
-  overflow: hidden;
   text-decoration: none;
   color: #eaeaea;
-  border: 2px solid rgba(255,255,255,.7);
-  background: url(../img/bac-top-menu.png);
-  box-shadow: 0 0 10px rgba(79,79,79,.6);
-  -moz-box-shadow: 0 0 10px rgba(79,79,79,.6);
-  -webkit-box-shadow: 0 0 10px rgba(79,79,79,.6);
-}
-
-.top-menu a.first {
-  border-radius: 10px 0 0 10px;
-  -moz-border-radius: 10px 0 0 10px;
-  -webkit-border-radius: 10px 0 0 10px;
-}
-
-.top-menu a.last {
-  border-radius:  0 10px 10px 0;
-  -moz-border-radius: 0 10px 10px 0;
-  -webkit-border-radius: 0 10px 10px 0;
 }
 
 .top-menu a:hover {
-  background: #ffffff;
-  color: #020202;
-  box-shadow: inset 0px 0px 4px rgba(65,202,254,.5);
-  -moz-box-shadow: inset 0px 0px 4px rgba(65,202,254,.5);
-  -webkit-box-shadow: inset 0px 0px 4px rgba(65,202,254,.5);
+
+}
+
+.div {
+  height: 100px;
+  margin: 2px;
+  background: #05a1d2;
+
 }
 
 /* CONTENT PAGE
