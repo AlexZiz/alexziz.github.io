@@ -146,7 +146,13 @@ body {
 -----------------------------*/
 
 .description {
-  /*min-height: 300px;*/
+  padding: 1em 0 2em 0;
+}
+
+.description h2 {
+  margin: 2em 0 1em 0;
+  text-align: center;
+  font-size: 2.25em;
 }
 
 /* FOOTER
@@ -155,12 +161,13 @@ body {
 .footer {
   position: absolute;
   width: 100%;
-  padding: 2em;
+  padding: 1em;
   background: #05799d;
+  color: #ffffff;
 }
 
-.fot-box {
-  margin-left: 30px;
+.social {
+  margin-left: 2.9em;
 }
 
 .fot-box:first-child {
@@ -168,12 +175,12 @@ body {
 }
 
 .social-text {
-  padding: 5px;
-  font-size: 20px;
+  margin: 1.5em 0 0 1em;
+  font-size: 1.25em;
 }
 
-.contacts-footer li {
-  margin: 3px;
+.contacts-foot {
+  margin: 1.5em 0 0 1em;
 }
 
 .vk,
