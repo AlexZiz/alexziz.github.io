@@ -71,7 +71,7 @@ body {
 -----------------------------*/
 
 .top-menu {
-  padding: 1.25em;
+  padding: 0.5em;
   text-align: center;
   background: #05a1d2;
 }
@@ -83,7 +83,8 @@ body {
 
 .top-menu a {
   display: block;
-  padding: 1em;
+  padding: 1em 1.5em 0 1.5em;
+
   text-decoration: none;
   color: #eaeaea;
 }
@@ -97,7 +98,7 @@ body {
 -----------------------------*/
 
 .content-page {
-  padding: 1.25em;
+  padding: 1em;
   height: 100%;
   background: #05a1d2;
 }
@@ -105,13 +106,17 @@ body {
 .box {
   float: left;
   max-width: 32%;
-  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+  background-image: -webkit-gradient(
+  linear,
+  right top,
+  right bottom,
+  color-stop(0.41, rgb(5, 162, 210)),
+  color-stop(0.88, rgb(35, 199, 249)));
+  background-image: -o-linear-gradient(bottom, rgb(5, 162, 210) 41%, rgb(35, 199, 249) 88%);
+  background-image: -moz-linear-gradient(bottom, rgb(5, 162, 210) 41%, rgb(35, 199, 249) 88%);
+  background-image: -webkit-linear-gradient(bottom, rgb(5, 162, 210) 41%, rgb(35, 199, 249) 88%);
+  background-image: -ms-linear-gradient(bottom, rgb(5, 162, 210) 41%, rgb(35, 199, 249) 88%);
+  background-image: linear-gradient(to bottom, rgb(5, 162, 210) 41%, rgb(35, 199, 249) 88%);
 }
 
 .box img {
@@ -129,6 +134,12 @@ body {
 
 .box-text {
   padding: 1.5625em ;
+}
+
+.box h2 {
+  padding-bottom: 1.25em;
+  font-size: 1.5em;
+  color: #f1f8fa;
 }
  
 /*DESCRIPTION
