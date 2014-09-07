@@ -1,5 +1,6 @@
 /*GENERAL STYLE
 -----------------------------------------------------------*/
+
 html, body {
   height: 100%;
 }
@@ -70,7 +71,7 @@ body {
 -----------------------------*/
 
 .top-menu {
-  padding: 0.5em;
+  padding: 0.625em 0 1em 0;
   text-align: center;
   background: #05a1d2;
 }
@@ -82,14 +83,28 @@ body {
 
 .top-menu a {
   display: block;
-  padding: 1em 1.5em 0 1.5em;
-
+  padding: 0.8125em 1.875em 0.8125em 1.875em;
   text-decoration: none;
-  color: #eaeaea;
+  font-size: 1.25em;
+  color: #ffffff;
 }
 
 .top-menu a:hover {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px; 
 
+  background: #05799d; /* Old browsers */
+  background: -moz-linear-gradient(top,  #05799d 1%, #05a1d2 99%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#05799d), color-stop(99%,#05a1d2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #05799d 1%,#05a1d2 99%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #05799d 1%,#05a1d2 99%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #05799d 1%,#05a1d2 99%); /* IE10+ */
+  background: linear-gradient(to bottom,  #05799d 1%,#05a1d2 99%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05799d', endColorstr='#05a1d2',GradientType=0 ); /* IE6-9 */
 }
 
 
@@ -98,7 +113,6 @@ body {
 
 .content-page {
   padding: 1em;
-  /*height: 100%;*/
   background: #05a1d2;
 }
 
