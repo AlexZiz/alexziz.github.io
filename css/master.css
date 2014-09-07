@@ -1,10 +1,13 @@
 /*GENERAL STYLE
 -----------------------------------------------------------*/
+html, body {
+  height: 100%;
+}
 
 body {
   position: relative;
   background: #fff;
-  font-family: "Tahoma";
+  font-family: "Ubuntu Condensed", Arial, Tahoma;
   color: #000000;
 }
 
@@ -43,27 +46,23 @@ body {
 
 .top {
   width: 100%;
-  padding: 1em;
+  padding: 1.25em;
   background: #4d4d4d;
-  color: #41caf5; 
+  color: #05a1d2; 
 }
 
-.top-text {
-  padding-left: 20px;
-  padding-top: 5px;
-  font-size: 35px;
-}
-
-.top-text span {
-  font-size: 16px;
+.logo {
+  margin-left: 3.9%; /*35px/1024px*/
 }
 
 .contacts {
-  padding-top: 0.5em;
+  margin-top: 1.25em;
+  margin-right: 1.25em;
+  font-size: 1em;
 }
 
-.contacts li {
-  margin: 3px;
+.contacts li:last-child {
+  margin-top: 0.4375em;
 }
 
 
