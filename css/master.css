@@ -186,7 +186,7 @@ body {
 -----------------------------*/
 
 .description {
-  padding: 2em 0 2em 0;
+  padding: 2em 5.3% 2em 5.3%;
   min-height: 300px;
 }
 
@@ -202,49 +202,43 @@ body {
 .footer {
   position: absolute;
   width: 100%;
-  padding: 1em;
+  padding: 1.25em;
+  border-top: 10px solid #4d4d4d;
   background: #05799d;
+  font-size: 1em;
   color: #ffffff;
 }
 
 .social {
-  margin-left: 2.9em;
+  margin-left: 5.3%;
 }
 
-.fot-box:first-child {
-  margin-left: 0;
+.social .social-text {
+  margin: 6px 10px 0 0;
 }
 
-.social-text {
-  margin: 1.5em 0 0 1em;
-  font-size: 1.25em;
-}
-
-.contacts-foot {
-  margin: 1.5em 0 0 1em;
-}
-
-.vk,
-.fasebook,
-.instagram {
-  margin-left: 8px;
+.socia-bottom a {
+  display: block;
+  float: left;
+  margin-right: 10px;
   width: 30px;
-  height: 30px;
-  background: url(../img/social.png);
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
+  height: 32px;
+  background-image: url(../img/social.png);
 }
 
 .vk {
-  background-position: 0;
+  background-position: 0 0;
+}
+.fase {
+  background-position: -31px 0;
+}
+.twit {
+  background-position: -62px 0;
+}
+.goop {
+  background-position: -93px 0;
 }
 
-.fasebook {
-  background-position: -32px 0;
+.contacts-foot {
+  margin-right: 5.3%;
 }
-
-.instagram {
-  background-position: -63px 0;
-}
-
