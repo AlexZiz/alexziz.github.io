@@ -60,6 +60,7 @@ body {
   margin-top: 1.25em;
   margin-right: 1.25em;
   font-size: 1em;
+  font-weight: bold;
 }
 
 .contacts li:last-child {
