@@ -1,7 +1,7 @@
 /*GENERAL STYLE
 -----------------------------------------------------------*/
 
-html, body {
+html, body, .wrap {
   height: 100%;
 }
 
@@ -202,8 +202,9 @@ body {
 
 .footer {
   position: absolute;
-  width: 100%;
+  margin-bottom: -150px;
   padding: 1.25em;
+  width: 100%;
   border-top: 10px solid #4d4d4d;
   background: #05799d;
   font-size: 1em;
