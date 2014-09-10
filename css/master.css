@@ -79,7 +79,7 @@ body {
 
 .top-menu ul li {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: -0.25em;
 }
 
 .top-menu a {
@@ -125,6 +125,7 @@ body {
   background-image: -webkit-linear-gradient(bottom, rgb(5, 162, 210) 41%, rgb(35, 199, 249) 88%);
   background-image: -ms-linear-gradient(bottom, rgb(5, 162, 210) 41%, rgb(35, 199, 249) 88%);
   background-image: linear-gradient(to bottom, rgb(5, 162, 210) 41%, rgb(35, 199, 249) 88%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05a2d2', endColorstr='#23c7f8',GradientType=0 );
 }
 
 .box-img {
@@ -155,10 +156,9 @@ body {
   -o-transform: scale(1.1);
 }
 
-.content-page .box {
+.content-page .first {
   margin-right: 1.953125%;
 }
-
 
 .box:last-child {
   margin-right: 0;
