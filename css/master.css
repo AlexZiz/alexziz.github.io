@@ -161,7 +161,7 @@ body {
 
   -webkit-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
-  -mox-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
 }
 
 .box img:hover {
