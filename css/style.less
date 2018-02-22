@@ -11,32 +11,151 @@
 /*============    HEADER   ===========*/
 header {
   display: block;
-  padding-top: 10px;
-  background: #d7d7d7;
+  background: #ffffff;
+
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(212,212,212,1);
+     -moz-box-shadow: 0px 2px 2px 0px rgba(212,212,212,1);
+          box-shadow: 0px 2px 2px 0px rgba(212,212,212,1);
+
+  .logotype {
+    margin-top: 15px;
+    width: 75px;
+    height: 60px;
+  }
 
   h2 {
+    margin-top: 23px;
     text-transform: uppercase;
     color: #0d78b4;
     font-weight: bold;
+
+    background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  .logotype {
-    margin-top: 12px;
-    width: 75px;
-    height: 80px;
-  }
 
   .phone_hed {
     text-align: right;
     text-transform: uppercase;
-    background: #d7d7d7;
-  }
 
+    h3 {
+
+      a {
+        font-weight: bold;
+        color: #585858;
+        font-size: 16px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    p {
+      font-size: 12px;
+      margin-top: 5px;
+      color: #6f6f6f;
+    }
+  }
 }
 
-/*============    ШРИФТЫ    ===========*/
+/*============    QUESTION    ===========*/
 
-/*============    ШРИФТЫ    ===========*/
+/*============    FORMS    ===========*/
+.wrap_question {
+  margin: 100px auto auto;
+  padding: 10px 10px 10px 0px;
+  width: 300px;
+  border: 2px solid #dbdbdb;
+
+  //********************** STYLE CAPTION ************************
+  h3 {
+    padding-top: 10px;
+    font-family: arial;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7e7e7e;
+  }
+
+  //********************** STYLE INPUT ************************
+  form {
+    box-sizing: border-box;
+    padding: 10px;
+
+    //********************** STYLE INPUT ************************
+    p {
+      display: block;
+      padding: 0;
+      margin: 0;
+
+      input[name="name"],
+      input[name="email"],
+      input[name="phone"] {
+        margin: 5px 0px 5px 0px;
+        padding: 5px;
+        width: 100%;
+        height: 20px;
+        border: 0;
+        border-bottom: 2px solid #73c184;
+        border-radius: none;
+        background: none;
+        cursor: pointer;
+      }
+
+      //********************** STYLE PLACEHOLDER INPUT ************************
+      input[name="name"]::-webkit-input-placeholder { color: #716f6f; }
+          input[name="name"]::-ms-input-placeholder { color: #716f6f; }
+            input[name="name"]:-ms-input-placeholder { color: #716f6f; }
+                    input[name="name"]::placeholder { color: #716f6f; }
+
+      input[name="email"]::-webkit-input-placeholder { color: #716f6f; }
+          input[name="email"]::-ms-input-placeholder { color: #716f6f; }
+            input[name="email"]:-ms-input-placeholder { color: #716f6f; }
+                            input[name="email"]::placeholder { color: #716f6f; }
+
+      input[name="phone"]::-webkit-input-placeholder { color: #716f6f; }
+          input[name="phone"]::-ms-input-placeholder { color: #716f6f; }
+            input[name="phone"]:-ms-input-placeholder { color: #716f6f; }
+                    input[name="phone"]::placeholder { color: #716f6f; }
+    }
+
+    //********************** STYLE TEXTAREA  ************************
+    textarea[name="text_send"] {
+      width: 98%;
+      height: 150px;
+      resize: none;
+      overflow: hidden;
+      margin: 30px 0px 30px 0px;
+      padding: 5px;
+      border: 2px solid #73c184;
+      cursor: pointer;
+    }
+
+    //********************** STYLE PLACEHOLDER TEXTAREA  ************************
+    textarea[name="text_send"]::-webkit-input-placeholder { color: #716f6f; }
+        textarea[name="text_send"]::-ms-input-placeholder { color: #716f6f; }
+         textarea[name="text_send"]:-ms-input-placeholder { color: #716f6f; }
+                  textarea[name="text_send"]::placeholder { color: #716f6f; }
+
+
+    //********************** STYLE BOTTOM  ************************
+    button {
+      margin: auto;
+      opacity: 0,9;
+      color: #05771f;
+      width: 103%;
+      height: 45px;
+      background: #9affc8;
+      border: 2px solid #73c184;
+      &:hover {
+        background: #05771f;
+        color: #fff;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+    }
+  }
+}
 
 /*============    ШРИФТЫ    ===========*/
 

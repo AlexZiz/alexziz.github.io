@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Заголовок </title>
+    <title>СвязьИнформБюро</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +21,7 @@
     <![endif]-->
   </head>
   <body>
-    
+
     <header>
       <div class="container">
         <div class="row">
@@ -32,7 +33,7 @@
           </div>
           <div class="col-sm-6 phone_hed">
             <h3><a href="tel:+78435265050">+7 (843) 526-50-50</a></h3>
-            <p>Режим работы с 9 <sup>00</sup> до 18 <sup>00</sup></p>
+            <p>Режим работы: с 9 <sup>00</sup> до 18 <sup>00</sup></p>
           </div>
         </div>
       </div>
@@ -47,22 +48,14 @@
             <p>Оставьте заявку и мы вам перезвоним</p>
           </div>
           <div class="col-sm-5">
-            <div class="form_wrap">
-              <div class="form_caption">Оставить заявку</div>
-              <form action="#">
-                <p>
-                  <input type="text" name="name" requered placeholder="Имя..." class="form_inpyt">
-                </p>
-                <p>
-                  <input type="text" name="phone" requered placeholder="Телефон..." class="form_inpyt">
-                </p>
-                <p>
-                  <input type="text" name="email" requered placeholder="Email..." class="form_inpyt">
-                </p>
-                <p>
-                  <textarea name="massage" rows="5" cols="40"></textarea>
-                </p>
-                <button type="button" name="button">Отправить заявку</button>
+            <div class="wrap_question">
+              <h3>Оставьте заявку</h3>
+              <form action="">
+                <p><input name="name" type="text" placeholder="Имя..."></p>
+                <p><input name="email" type="text" placeholder="Email..."></p>
+                <p><input name="phone" type="text" placeholder="Телефон..."></p>
+                <textarea name="text_send" id="" placeholder="Оставьте сообщение здесь..."></textarea>
+                <button type="button" name="button">Отправить</button>
               </form>
             </div>
           </div>
