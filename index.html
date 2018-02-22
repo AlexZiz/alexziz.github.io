@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Заголовок </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-1 logotype">
+            <img src="img/logo.png" alt="Логотип СвязьИнформБюро" class="img-responsive">
+          </div>
+          <div class="col-sm-5">
+            <h2>связьинформбюро</h2>
+          </div>
+          <div class="col-sm-6 phone_hed">
+            <h3><a href="tel:+78435265050">+7 (843) 526-50-50</a></h3>
+            <p>Режим работы с 9 <sup>00</sup> до 18 <sup>00</sup></p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="question">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7">
+            <h1>Нужна <span>атс?</span><br>
+            Попробуйте <span>"Ericsson LG"</span></h1>
+            <p>Оставьте заявку и мы вам перезвоним</p>
+          </div>
+          <div class="col-sm-5">
+            <div class="form_wrap">
+              <div class="form_caption">Оставить заявку</div>
+              <form action="#">
+                <p>
+                  <input type="text" name="name" requered placeholder="Имя..." class="form_inpyt">
+                </p>
+                <p>
+                  <input type="text" name="phone" requered placeholder="Телефон..." class="form_inpyt">
+                </p>
+                <p>
+                  <input type="text" name="email" requered placeholder="Email..." class="form_inpyt">
+                </p>
+                <p>
+                  <textarea name="massage" rows="5" cols="40"></textarea>
+                </p>
+                <button type="button" name="button">Отправить заявку</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="advantages">
+      <div class="container">
+        <div class="row">
+          <div class="caption_advantages text-centr">
+            <h2>Наши преимущества.</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="wrap_advantages">
+              <div class="hexagon">
+                <span class="hexagon_icon hexagon_1"></span>
+              </div>
+              <h4>Станция под ключь</h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="wrap_advantages">
+              <div class="hexagon">
+                <span class="hexagon_icon hexagon_2"></span>
+              </div>
+              <h4>Доступные цены</h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="wrap_advantages">
+              <div class="hexagon">
+                <span class="hexagon_icon hexagon_3"></span>
+              </div>
+              <h4>Качество проверенное годами</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="simple_to_complex">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="atc_img">
+              <h4>От простого</h4>
+              <img src="img/atc/1.png" alt="Мини АТС" class="img-responsive">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="atc_img">
+              <span class="atc_progress"></span>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="atc_img">
+              <h4>К сложному</h4>
+              <img src="img/atc/3.png" alt="Крупная АТС" class="img-responsive">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="map">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Нас легко найти.</h2>
+            <div class="map_wrap"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container">
+      <div class="row">
+        <div class="col-sm-6">
+         <div class="contacts">
+           <span class="phone_footer"></span><p><a href="tel:+78435265050">+7 (843) 526-50-50</a></p>
+           <span class="email_footer"></span><p>Email: 5265050@bk.ru</p>
+           <span class="fax_footer"></span><p>Факс: +7 (843) 526-50-72</p>
+           <span class="addresss_footer"></span><p>Казань, ул. Спартаковская д. 6, офис 1513</p>
+         </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="logo_fot_wrap">
+            <img src="img/logo_foot.png" alt="Логотип СвязьИнформБюро" class="lofo_foot">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+              </div>
+              <div class="modal-body">
+               <div class="row">
+
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      $(document).ready(
+          function() {
+              $("html").niceScroll({cursorcolor:"#000"});
+          }
+      );
+    </script>
+  </body>
+</html>
