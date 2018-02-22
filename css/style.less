@@ -4,10 +4,6 @@
 
 /*============    ГЛАВНЫЙ ЭКРАН    ===========*/
 
-/*============    Section question    ===========*/
-.form_inpyt {
-  display: block;
-}
 /*============    HEADER   ===========*/
 header {
   display: block;
@@ -59,14 +55,29 @@ header {
   }
 }
 
-/*============    QUESTION    ===========*/
+/*============    Section question    ===========*/
+#question {
+  padding-top: 70px;
+  font-stretch: expanded;
 
-/*============    FORMS    ===========*/
+  .title_question {
+    text-transform: uppercase;
+
+    span {
+      color: red;
+    }
+
+    p {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+}
+/*============    form    ===========*/
 .wrap_question {
-  margin: 100px auto auto;
   padding: 10px 10px 10px 0px;
   width: 300px;
-  border: 2px solid #dbdbdb;
+  // border: 2px solid #dbdbdb;
 
   //********************** STYLE CAPTION ************************
   h3 {
