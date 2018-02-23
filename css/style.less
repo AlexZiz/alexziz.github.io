@@ -1,55 +1,102 @@
 //out: style.css, soursemap: true, compress: true
 
 /*============    ШРИФТЫ    ===========*/
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('fonts/MontserratBold.eot');
+    src: url('fonts/MontserratBold.eot') format('embedded-opentype'),
+         url('fonts/MontserratBold.woff2') format('woff2'),
+         url('fonts/MontserratBold.woff') format('woff'),
+         url('fonts/MontserratBold.ttf') format('truetype'),
+         url('fonts/MontserratBold.svg#MontserratBold') format('svg');
+}
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url('fonts/MontserratMedium.eot');
+    src: url('fonts/MontserratMedium.eot') format('embedded-opentype'),
+         url('fonts/MontserratMedium.woff2') format('woff2'),
+         url('fonts/MontserratMedium.woff') format('woff'),
+         url('fonts/MontserratMedium.ttf') format('truetype'),
+         url('fonts/MontserratMedium.svg#MontserratMedium') format('svg');
+}
+@font-face {
+    font-family: 'MontserratLight';
+    src: url('fonts/MontserratLight.eot');
+    src: url('fonts/MontserratLight.eot') format('embedded-opentype'),
+         url('fonts/MontserratLight.woff2') format('woff2'),
+         url('fonts/MontserratLight.woff') format('woff'),
+         url('fonts/MontserratLight.ttf') format('truetype'),
+         url('fonts/MontserratLight.svg#MontserratLight') format('svg');
+}
 
-/*============    body    ===========*/
+.bold {
+  font-family: 'MontserratBold';
+}
+.med {
+  font-family: 'MontserratMedium';
+}
+.light {
+  font-family: 'MontserratLight';
+}
+
+/*============    BODY    ===========*/
 body {
-  font-stretch: expanded;
+  font-family: 'Montserrat', sans-serif;
+  color: #666666;
 }
 
 /*============    HEADER   ===========*/
 header {
+  padding-top: 10px;
   display: block;
   background: #ffffff;
-
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(212,212,212,1);
-     -moz-box-shadow: 0px 2px 2px 0px rgba(212,212,212,1);
-          box-shadow: 0px 2px 2px 0px rgba(212,212,212,1);
-
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(212,212,212,1);
+     -moz-box-shadow: 0px 1px 1px 0px rgba(212,212,212,1);
+          box-shadow: 0px 1px 1px 0px rgba(212,212,212,1);
   .logotype {
     margin-top: 15px;
     width: 75px;
     height: 60px;
   }
 
-  h2 {
-    margin-top: 23px;
-    text-transform: uppercase;
-    color: #0d78b4;
-    font-weight: bold;
-
-    background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .text_logo {
+    h2 {
+      margin-top: 23px;
+      text-transform: uppercase;
+      .bold;
+      span {
+        color: #e63848;
+      }
+      // background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+    }
   }
-
-
   .phone_hed {
     text-align: right;
     text-transform: uppercase;
-
     h3 {
-
       a {
+        .light;
+        text-decoration: none;
         font-weight: bold;
         color: #585858;
-        font-size: 16px;
+        font-size: 26px;
         &:hover {
           text-decoration: none;
         }
+        &:before {
+          content: " ";
+          display: inline-block;
+          width: 32px;
+          height: 32px;
+          margin-right: 5px;
+          vertical-align: sub;
+          background: url(../img/had_phope_icon.png) no-repeat center center;
+          opacity: 0.4;
+        }
       }
     }
-
     p {
       font-size: 12px;
       margin-top: 5px;
@@ -60,111 +107,101 @@ header {
 
 /*============    Section question    ===========*/
 #question {
-  padding-top: 70px;
-
+  padding-top: 100px;
+  background: url(../img/bac_quwstion.png) no-repeat 40% 100%;
   .title_question {
+    .bold;
     text-transform: uppercase;
-
-    span {
-      color: red;
+    color: #666666;
+    h1 {
+      line-height: 150%;
+      span {
+        color: #e63848;
+      }
     }
-
     p {
+      margin-top: 30px;
       display: block;
-      margin-top: 20px;
+      .med;
+      color: #666666;
+      font-size: 16px;
     }
   }
-}
-/*============    form    ===========*/
-.wrap_question {
-  padding: 10px 10px 10px 0px;
-  width: 300px;
-  // border: 2px solid #dbdbdb;
+  .wrap_question {            //FORM
+    padding: 10px 10px 10px 0px;
+    width: 100%;
+    h3 {                     //STYLE CAPTION
+      padding-top: 10px;
+      font-family: arial;
+      text-align: center;
+      text-transform: uppercase;
+      color: #e63848;
+    }
+    form {                   //STYLE INPUT
+      box-sizing: border-box;
+      // padding: 10px;
+      color: #666666;
+      .med;
+      p {                    //STYLE INPUT
+        display: block;
+        padding: 0;
+        margin: 0;
+        input[name="name"],
+        input[name="email"],
+        input[name="phone"] {
+          margin: 5px 0px 5px 0px;
+          padding: 20px;
+          width: 100%;
+          height: 20px;
+          border: 1px solid #dfdfdf;
+          border-radius: none;
+          background: none;
+          cursor: pointer;
+        }
+        input[name="name"]::-webkit-input-placeholder { color: #716f6f; }// STYLE PLACEHOLDER INPUT
+            input[name="name"]::-ms-input-placeholder { color: #716f6f; }
+              input[name="name"]:-ms-input-placeholder { color: #716f6f; }
+                      input[name="name"]::placeholder { color: #716f6f; }
 
-  //********************** STYLE CAPTION ************************
-  h3 {
-    padding-top: 10px;
-    font-family: arial;
-    text-align: center;
-    text-transform: uppercase;
-    color: #7e7e7e;
-  }
+        input[name="email"]::-webkit-input-placeholder { color: #716f6f; }
+            input[name="email"]::-ms-input-placeholder { color: #716f6f; }
+              input[name="email"]:-ms-input-placeholder { color: #716f6f; }
+                              input[name="email"]::placeholder { color: #716f6f; }
 
-  //********************** STYLE INPUT ************************
-  form {
-    box-sizing: border-box;
-    padding: 10px;
-
-    //********************** STYLE INPUT ************************
-    p {
-      display: block;
-      padding: 0;
-      margin: 0;
-
-      input[name="name"],
-      input[name="email"],
-      input[name="phone"] {
-        margin: 5px 0px 5px 0px;
-        padding: 5px;
+        input[name="phone"]::-webkit-input-placeholder { color: #716f6f; }
+            input[name="phone"]::-ms-input-placeholder { color: #716f6f; }
+              input[name="phone"]:-ms-input-placeholder { color: #716f6f; }
+                      input[name="phone"]::placeholder { color: #716f6f; }
+      }
+      textarea[name="text_send"] {        //STYLE TEXTAREA
         width: 100%;
-        height: 20px;
-        border: 0;
-        border-bottom: 2px solid #73c184;
-        border-radius: none;
-        background: none;
+        height: 150px;
+        resize: none;
+        overflow: hidden;
+        margin: 5px 0px 5px 0px;
+        padding: 10px 0px 0px 20px;
+        border: 1px solid #dfdfdf;
         cursor: pointer;
       }
-
-      //********************** STYLE PLACEHOLDER INPUT ************************
-      input[name="name"]::-webkit-input-placeholder { color: #716f6f; }
-          input[name="name"]::-ms-input-placeholder { color: #716f6f; }
-            input[name="name"]:-ms-input-placeholder { color: #716f6f; }
-                    input[name="name"]::placeholder { color: #716f6f; }
-
-      input[name="email"]::-webkit-input-placeholder { color: #716f6f; }
-          input[name="email"]::-ms-input-placeholder { color: #716f6f; }
-            input[name="email"]:-ms-input-placeholder { color: #716f6f; }
-                            input[name="email"]::placeholder { color: #716f6f; }
-
-      input[name="phone"]::-webkit-input-placeholder { color: #716f6f; }
-          input[name="phone"]::-ms-input-placeholder { color: #716f6f; }
-            input[name="phone"]:-ms-input-placeholder { color: #716f6f; }
-                    input[name="phone"]::placeholder { color: #716f6f; }
-    }
-
-    //********************** STYLE TEXTAREA  ************************
-    textarea[name="text_send"] {
-      width: 98%;
-      height: 150px;
-      resize: none;
-      overflow: hidden;
-      margin: 30px 0px 30px 0px;
-      padding: 5px;
-      border: 2px solid #73c184;
-      cursor: pointer;
-    }
-
-    //********************** STYLE PLACEHOLDER TEXTAREA  ************************
-    textarea[name="text_send"]::-webkit-input-placeholder { color: #716f6f; }
-        textarea[name="text_send"]::-ms-input-placeholder { color: #716f6f; }
-         textarea[name="text_send"]:-ms-input-placeholder { color: #716f6f; }
-                  textarea[name="text_send"]::placeholder { color: #716f6f; }
-
-
-    //********************** STYLE BOTTOM  ************************
-    button {
-      margin: auto;
-      opacity: 0,9;
-      color: #05771f;
-      width: 103%;
-      height: 45px;
-      background: #9affc8;
-      border: 2px solid #73c184;
-      &:hover {
-        background: #05771f;
-        color: #fff;
-        transition: 0.5s;
-        cursor: pointer;
+      textarea[name="text_send"]::-webkit-input-placeholder { color: #716f6f; }//STYLE PLACEHOLDER TEXTAREA
+          textarea[name="text_send"]::-ms-input-placeholder { color: #716f6f; }
+           textarea[name="text_send"]:-ms-input-placeholder { color: #716f6f; }
+                    textarea[name="text_send"]::placeholder { color: #716f6f; }
+      button {                //STYLE BOTTOM
+        margin: auto;
+        opacity: 0,9;
+        color: #ffffff;
+        width: 100%;
+        height: 45px;
+        background: #f1788e;
+        border: 2px solid #f1788e;
+        text-transform: uppercase;
+        &:hover {
+          background: #e63848;
+          color: #ffffff;
+          transition: 0.5s;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -173,13 +210,10 @@ header {
 /*============    SECTION ADVANTAGES   ===========*/
 #advantages {
   margin-top: 70px;
-
   .caption_advantages {
     text-align: center;
     text-transform: uppercase;
-    color: #989898;
   }
-
   .wrap_advantages {
     display: block;
     margin-top: 30px;
