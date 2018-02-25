@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>СвязьИнформБюро</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -69,31 +69,31 @@
     <section id="advantages">
       <div class="container">
         <div class="row">
-          <div class="caption_advantages text-centr">
+          <div class="caption_advantages text-center">
             <h2>Наши преимущества.</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row wrap_advantages">
           <div class="col-sm-4">
-            <div class="wrap_advantages">
+            <div class="wrap_hexagon" align="center">
               <div class="hexagon">
-                <span class="hexagon_icon hexagon_1"></span>
+                <div class="hexagon_icon hexagon_1"></div>
               </div>
-              <h4>Станция под ключь</h4>
+              <h4>АТС под ключь</h4>
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="wrap_advantages">
+            <div class="wrap_hexagon" align="center">
               <div class="hexagon">
-                <span class="hexagon_icon hexagon_2"></span>
+                <div class="hexagon_icon hexagon_2"></div>
               </div>
               <h4>Доступные цены</h4>
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="wrap_advantages">
+            <div class="wrap_hexagon" align="center">
               <div class="hexagon">
-                <span class="hexagon_icon hexagon_3"></span>
+                <div class="hexagon_icon hexagon_3"></div>
               </div>
               <h4>Качество проверенное годами</h4>
             </div>
@@ -105,21 +105,17 @@
     <section id="simple_to_complex">
       <div class="container">
         <div class="row">
-          <div class="col-sm-4">
-            <div class="atc_img">
-              <h4>От простого</h4>
+          <div class="caption_simple_to_complex text-center">
+            <h2>От простого к сложному</h2>
+          </div>
+          <div class="col-sm-6">
+            <div class="atc_img smal_atc">
               <img src="img/atc/1.png" alt="Мини АТС" class="img-responsive">
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class="atc_img">
-              <span class="atc_progress"></span>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="atc_img">
-              <h4>К сложному</h4>
-              <img src="img/atc/3.png" alt="Крупная АТС" class="img-responsive">
+          <div class="col-sm-6">
+            <div class="atc_img big_atc" align="right">
+              <img src="img/atc/2.png" alt="Крупная АТС" class="img-responsive">
             </div>
           </div>
         </div>
@@ -131,28 +127,32 @@
         <div class="row">
           <div class="col-sm-12">
             <h2>Нас легко найти.</h2>
-            <div class="map_wrap"></div>
+            <div class="map_wrap">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0-QC4XCwU8pxo8d0BTqfbXBLwU2M15i0&amp;width=100%25&amp;height=357&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="container">
-      <div class="row">
-        <div class="col-sm-6">
-         <div class="contacts">
-           <span class="phone_footer"></span><p><a href="tel:+78435265050">+7 (843) 526-50-50</a></p>
-           <span class="email_footer"></span><p>Email: 5265050@bk.ru</p>
-           <span class="fax_footer"></span><p>Факс: +7 (843) 526-50-72</p>
-           <span class="addresss_footer"></span><p>Казань, ул. Спартаковская д. 6, офис 1513</p>
-         </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="logo_fot_wrap">
-            <img src="img/logo_foot.png" alt="Логотип СвязьИнформБюро" class="lofo_foot">
+    <footer>
+      <div class="container"><div class="row">
+        <div class="wrap_content_foot">
+          <div class="col-sm-10">
+           <div class="contacts">
+             <p class="foot_icon phone_footer"><a href="tel:+78435265050">+7 (843) 526-50-50</a></p>
+             <p class="foot_icon email_footer">Email: 5265050@bk.ru</p>
+             <p class="foot_icon fax_footer">Факс: +7 (843) 526-50-72</p>
+             <p class="foot_icon addresss_footer">Казань, ул. Спартаковская д. 6, офис 1513</p>
+           </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="logo_fot_wrap">
+              <img src="img/logo_foot.png" alt="Логотип СвязьИнформБюро" class="lofo_foot">
+            </div>
           </div>
         </div>
-      </div>
+      </div></div>
     </footer>
 
     <!-- Modal -->
