@@ -1,6 +1,6 @@
 //out: style.css, soursemap: true, compress: true
 
-/*============    ШРИФТЫ    ===========*/
+/*============    FONT    ===========*/
 @font-face {
     font-family: 'MontserratBold';
     src: url('fonts/MontserratBold.eot');
@@ -69,9 +69,6 @@ header {
       span {
         color: #e63848;
       }
-      // background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
     }
   }
 
@@ -112,10 +109,10 @@ header {
   }
 }
 
-/*============    Section question    ===========*/
+/*============    SECTION QUESTION   ===========*/
 #question {
   padding-top: 100px;
-  background: url("../img/bac_quwstion.png") no-repeat 45% 100%;
+  background: url("../img/bac_quwstion.png") no-repeat 21% 100%;
 
   .title_question {
     .bold;
@@ -140,12 +137,10 @@ header {
   }
 
   .wrap_question {
-    //FORM
     padding: 10px 10px 10px 0;
     width: 100%;
 
     h3 {
-      //STYLE CAPTION
       padding-top: 10px;
       font-family: arial;
       text-align: center;
@@ -154,14 +149,11 @@ header {
     }
 
     form {
-      //STYLE INPUT
       box-sizing: border-box;
-      // padding: 10px;
       color: #666666;
       .med;
 
       p {
-        //STYLE INPUT
         display: block;
         padding: 0;
         margin: 0;
@@ -170,9 +162,9 @@ header {
         input[name="email"],
         input[name="phone"] {
           margin: 5px 0;
-          padding: 20px;
+          padding-left: 20px;
           width: 100%;
-          height: 20px;
+          height: 40px;
           border: 1px solid #dfdfdf;
           -webkit-border-radius: 5px;
           -moz-border-radius: 5px;
@@ -181,58 +173,26 @@ header {
           cursor: pointer;
         }
 
-        input[name="name"]::-webkit-input-placeholder {
-          color: #716f6f;
-        }
-        // STYLE PLACEHOLDER INPUT
+        input[name="name"]::-webkit-input-placeholder {color: #716f6f;}
+            input[name="name"]::-ms-input-placeholder {color: #716f6f;}
+             input[name="name"]:-ms-input-placeholder {color: #716f6f;}
+                  input[name="name"]:-moz-placeholder {color: #716f6f;}
+                      input[name="name"]::placeholder {color: #716f6f;}
 
-        input[name="name"]::-ms-input-placeholder {
-          color: #716f6f;
-        }
+        input[name="email"]::-webkit-input-placeholder {color: #716f6f;}
+            input[name="email"]::-ms-input-placeholder {color: #716f6f;}
+             input[name="email"]:-ms-input-placeholder {color: #716f6f;}
+                  input[name="email"]:-moz-placeholder {color: #716f6f;}
+                      input[name="email"]::placeholder {color: #716f6f;}
 
-        input[name="name"]:-ms-input-placeholder {
-          color: #716f6f;
-        }
-
-        input[name="name"]::placeholder {
-          color: #716f6f;
-        }
-
-        input[name="email"]::-webkit-input-placeholder {
-          color: #716f6f;
-        }
-
-        input[name="email"]::-ms-input-placeholder {
-          color: #716f6f;
-        }
-
-        input[name="email"]:-ms-input-placeholder {
-          color: #716f6f;
-        }
-
-        input[name="email"]::placeholder {
-          color: #716f6f;
-        }
-
-        input[name="phone"]::-webkit-input-placeholder {
-          color: #716f6f;
-        }
-
-        input[name="phone"]::-ms-input-placeholder {
-          color: #716f6f;
-        }
-
-        input[name="phone"]:-ms-input-placeholder {
-          color: #716f6f;
-        }
-
-        input[name="phone"]::placeholder {
-          color: #716f6f;
-        }
+        input[name="phone"]::-webkit-input-placeholder {color: #716f6f;}
+            input[name="phone"]::-ms-input-placeholder {color: #716f6f;}
+             input[name="phone"]:-ms-input-placeholder {color: #716f6f;}
+                  input[name="phone"]:-moz-placeholder {color: #716f6f;}
+                      input[name="phone"]::placeholder {color: #716f6f;}
       }
 
       textarea[name="text_send"] {
-        //STYLE TEXTAREA
         width: 100%;
         height: 150px;
         resize: none;
@@ -246,22 +206,12 @@ header {
         border-radius: 5px;
       }
 
-      textarea[name="text_send"]::-webkit-input-placeholder {
-        color: #716f6f;
-      }
-      //STYLE PLACEHOLDER TEXTAREA
+      textarea[name="text_send"]::-webkit-input-placeholder {color: #716f6f;}
+          textarea[name="text_send"]::-ms-input-placeholder {color: #716f6f;}
+           textarea[name="text_send"]:-ms-input-placeholder {color: #716f6f;}
+                textarea[name="text_send"]:-moz-placeholder {color: #716f6f;}
+                    textarea[name="text_send"]::placeholder {color: #716f6f;}
 
-      textarea[name="text_send"]::-ms-input-placeholder {
-        color: #716f6f;
-      }
-
-      textarea[name="text_send"]:-ms-input-placeholder {
-        color: #716f6f;
-      }
-
-      textarea[name="text_send"]::placeholder {
-        color: #716f6f;
-      }
 
       button {
         //STYLE BOTTOM
@@ -307,13 +257,7 @@ header {
         height: 151px;
         width: 137px;
         background: url("../img/hex.png") no-repeat center center;
-        // opacity: 0.2;
-        // transition: 0.5s;
-        //
-        // &:hover {
-        //   opacity: 1;
-        //   transition: 0.5s;
-        // }
+
         .hexagon_1,
         .hexagon_2,
         .hexagon_3 {
@@ -361,8 +305,6 @@ header {
     text-transform: uppercase;
     .bold;
   }
-
-  .atc_img {}
 
   .smal_atc {
     margin-top: 150px;
@@ -418,21 +360,10 @@ footer {
         background: url("../img/footer_sprite.png") no-repeat;
       }
 
-      .addresss_footer:before {
-        background-position: -55px 1px;
-      }
-
-      .phone_footer:before {
-        background-position: -18px 1px;
-      }
-
-      .email_footer:before {
-        background-position: 1px 1px;
-      }
-
-      .fax_footer:before {
-        background-position: -36px 1px;
-      }
+      .addresss_footer:before {background-position: -55px 1px;}
+         .phone_footer:before {background-position: -18px 1px;}
+           .email_footer:before {background-position: 1px 1px;}
+           .fax_footer:before {background-position: -36px 1px;}
 
       p {
         padding-top: 10px;
@@ -451,13 +382,7 @@ footer {
   }
 }
 
-/*============    ШРИФТЫ    ===========*/
-
-/*============    ПОДВАЛ    ===========*/
-
-/*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
-
-/*============    	АДАПТИВ    ===========*/
+/*============    	ADAPTING    ===========*/
 
 @media(min-width:0px) and (max-width:320px)  {
 
