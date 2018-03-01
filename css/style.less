@@ -150,15 +150,19 @@ header {
     .turn_key_ul {
       position: absolute;
       display: none;
-      list-style-type: none;
+      left: 180px;
+      top: 0px;
+      list-style-type: square;
       padding:10px 0px 10px 0px;
-      border: 1px solid #666666;
-    }
-
-    .turn_key:hover .turn_key_ul {
-      display: block;
-      width: 100%;
-      height: 100%;
+      border-radius: 5px;
+      background: #ffffff;
+      color: #e63848;
+      -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+      li {
+        padding: 10px;
+      }
     }
   }
 
