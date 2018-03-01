@@ -111,8 +111,8 @@ header {
 
 /*============    SECTION QUESTION   ===========*/
 #question {
-  padding-top: 100px;
-  background: url("../img/bac_quwstion.png") no-repeat 23% 98%;
+  padding-top: 70px;
+  // background: url("../img/bac_quwstion.png") no-repeat 23% 98%;
 
   .title_question {
     .med;
@@ -133,6 +133,32 @@ header {
       .med;
       color: #666666;
       font-size: 16px;
+    }
+  }
+
+  .question_adv {
+    position: relative;
+    margin-top: 30px;
+    color: #666666;
+    text-transform: uppercase;
+    .med;
+
+    p {
+      padding: 10px;
+    }
+
+    .turn_key_ul {
+      position: absolute;
+      display: none;
+      list-style-type: none;
+      padding:10px 0px 10px 0px;
+      border: 1px solid #666666;
+    }
+
+    .turn_key:hover .turn_key_ul {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -256,7 +282,7 @@ header {
 
 /*=========================    SECTION ADVANTAGES   ===========================*/
 #advantages {
-  margin-top: 150px;
+  margin-top: 30px;
 
   .caption_advantages {
     text-align: center;
