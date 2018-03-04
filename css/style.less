@@ -45,6 +45,13 @@ body {
   color: #666666;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 /*============    HEADER   ===========*/
 header {
   padding-top: 10px;
@@ -115,36 +122,47 @@ header {
   // background: url("../img/bac_quwstion.png") no-repeat 23% 98%;
 
   .title_question {
-    .med;
+    .bold;
     text-transform: uppercase;
     color: #666666;
 
     h2 {
       line-height: 150%;
 
-      span {
+      span:first-child{
         color: #e63848;
-      }//span
+      }
+
+      span:nth-child(3) {
+        color: #1a3167;//#e63848
+        .bold;
+      }
+
+      span:nth-child(4) {
+        color: #e63848;
+        .bold;
+      }
     }//h2
 
     p {
       margin-top: 30px;
       display: block;
+      color: #1A7FB3;
+      font-size: 18px;
       .med;
-      color: #666666;
-      font-size: 16px;
     }//p
   }//title_question
 
   .wrap_tab {
-    width: 86%;
-    margin: 40px 0 0 0;
+    width: 90%;
+    height: 100%;
+    margin: 75px 0 0 0;
 
     input {
       display: none;
 
       &:checked + label {
-        background: #e63848;
+        background: #1A7FB3; //#e63848;
         color: #fff;
       }//&:checked
     }//input
@@ -159,12 +177,14 @@ header {
     label {
       cursor: pointer;
       display: inline-block;
-      padding: 10px 30px;
+      width: 32.95%;
+      padding: 10px 10px;
       margin-bottom: 0;
       background: #fff;
       border-radius: 5px 5px 0 0;
       .med;
       text-transform: uppercase;
+      text-align: center;
     }//label
 
     .content {
@@ -178,8 +198,8 @@ header {
         width: 100%;
         background: #fff;
         padding: 30px 0px 15px 0px;
-        border-top: 5px solid #e63848;
-        border-bottom: 5px solid #e63848;
+        border-top: 5px solid #1A7FB3;
+        // border-bottom: 5px solid #e63848;
         text-transform: uppercase;
         // border-radius: 0px 0px 5px 5px;
         // border: 1px solid red;
@@ -212,7 +232,7 @@ header {
       font-family: arial;
       text-align: center;
       text-transform: uppercase;
-      color: #e63848;
+      color: #1A7FB3;
       font-weight: 400;
       .med;
     }//h3
@@ -302,8 +322,8 @@ header {
         color: #ffffff;
         width: 100%;
         height: 45px;
-        background: #f1788e;
-        border: 2px solid #f1788e;
+        background: #1A7FB3;
+        border: 2px solid #1A7FB3;
         text-transform: uppercase;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
@@ -312,6 +332,7 @@ header {
 
         &:hover {
           background: #e63848;
+          border: 2px solid #e63848;
           color: #ffffff;
           transition: 0.5s;
           cursor: pointer;
@@ -321,81 +342,36 @@ header {
   }//wrap_question
 }//#question
 
-/*=========================    SECTION ADVANTAGES   ===========================*/
-#advantages {
-  margin-top: 30px;
-
-  .caption_advantages {
-    text-align: center;
-    text-transform: uppercase;
-    .bold;
-  }
-
-  .wrap_advantages {
-    margin-top: 70px;
-
-    .wrap_hexagon {
-      .hexagon {
-        position: relative;
-        height: 151px;
-        width: 137px;
-        background: url("../img/hex.png") no-repeat center center;
-
-        .hexagon_1,
-        .hexagon_2,
-        .hexagon_3 {
-          position: absolute;
-          top: 17%;
-          left: 14%;
-          width: 100px;
-          height: 100px;
-          // opacity: 2;
-        }
-
-        .hexagon_1 {
-          background-image: url("../img/adv-sprite.png");
-          background-position: left center;
-        }
-
-        .hexagon_2 {
-          background-image: url("../img/adv-sprite.png");
-          background-position: center center;
-        }
-
-        .hexagon_3 {
-          background-image: url("../img/adv-sprite.png");
-          background-position: right center;
-        }
-      }//hexagon
-
-      h4 {
-        font-size: 18px;
-        color: #e63848;
-        .med;
-      }//h4
-    }//wrap_hexagon
-  }//wrap_advantages
-}//advantages
-
 /*============    SIMPLE TO COMPLEEX    ===========*/
 #simple_to_complex {
-  margin-top: 150px;
-  height: 500px;
+  margin-top: 100px;
+  // border-bottom: 1px solid red;
 
   .caption_simple_to_complex {
+    padding-bottom: 40px;
     text-align: center;
     text-transform: uppercase;
     .med;
-  }
+  }//caption_simple_to_complex
 
-  .smal_atc {
-    margin-top: 150px;
-  }
+  .atc_img {
+    margin-bottom: 10px;
+  }//atc_img
 
-  .big_atc {
-    margin-top: 50px;
+  .signature {
+    margin-top: 30px;
+    border-top: 1px solid #e2e2e2;
+
+    p{
+      display: block;
+      padding-top: 10px;
+      text-transform: uppercase;
+      font-size: 18px;
+      color: #1A7FB3;//#e63848;
+      .med;
+    }
   }
-}
+}//simple_to_complex
 
 /*============    MAP    ===========*/
 #map {
@@ -413,14 +389,12 @@ header {
 
   .map_wrap {
     margin-top: 50px;
-    padding: 4px;
-    border: 1px solid #d7d7d7;
   }
 }
 
 /*============    FOOTER    ===========*/
 footer {
-  margin-top: 100px;
+  // margin-top: 100px;
   height: 300px;
   background: #2e2e2e;
   color: #dbdbdb;
