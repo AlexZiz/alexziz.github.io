@@ -54,7 +54,7 @@ body {
 
 /*============    HEADER   ===========*/
 header {
-  padding-top: 10px;
+  // padding-top: 10px;
   display: block;
   background: #ffffff;
   -webkit-box-shadow: 0 1px 1px 0 rgba(212,212,212,1);
@@ -62,13 +62,13 @@ header {
   box-shadow: 0 1px 1px 0 rgba(212,212,212,1);
 
   .logotype {
-    margin-top: 15px;
-    width: 75px;
-    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }//logotype
 
   .text_logo {
-    h2 {
+    h3 {
+      letter-spacing: 3px;
       margin-top: 23px;
       text-transform: uppercase;
       .bold;
@@ -80,16 +80,17 @@ header {
   }//text_logo
 
   .phone_hed {
+    margin-top: 20px;
     text-align: right;
     text-transform: uppercase;
 
-    h3 {
+    h4 {
       a {
         .light;
         text-decoration: none;
         font-weight: bold;
         color: #585858;
-        font-size: 26px;
+        // font-size: 26px;
 
         &:hover {
           text-decoration: none;
@@ -101,7 +102,7 @@ header {
           width: 32px;
           height: 32px;
           margin-right: 5px;
-          vertical-align: sub;
+          vertical-align: middle;
           background: url("../img/had_phope_icon.png") no-repeat center center;
           opacity: 0.4;
         }//&:before
@@ -109,8 +110,8 @@ header {
     }//h3
 
     p {
-      font-size: 12px;
-      margin-top: 5px;
+      font-size: 11px;
+      // margin-top: 5px;
       color: #6f6f6f;
     }//p
   }//phone_hed
@@ -118,113 +119,72 @@ header {
 
 /*============    SECTION QUESTION   ===========*/
 #question {
-  padding-top: 70px;
-  // background: url("../img/bac_quwstion.png") no-repeat 23% 98%;
+  height: 460px;
+  padding-top: 100px;
+  background: url("../img/bg_question.png") no-repeat 23% 98%;
 
   .title_question {
     .bold;
-    text-transform: uppercase;
-    color: #666666;
+    color: #FFFFFF;
 
     h2 {
+      letter-spacing: 4px;
+      text-transform: uppercase;
       line-height: 150%;
+      font-size: 36px;
 
-      span:first-child{
-        color: #e63848;
+      small {
+        color: #FFFFFF;
       }
 
       span:nth-child(3) {
-        color: #1a3167;//#e63848
+        color: #FFFFFF;//#e63848
         .bold;
       }
 
       span:nth-child(4) {
-        color: #e63848;
+        color: #FFFFFF;
         .bold;
       }
     }//h2
 
     p {
-      margin-top: 30px;
+      margin-top: 20px;
       display: block;
-      color: #1A7FB3;
+      color: #ffffff;
       font-size: 18px;
       .med;
     }//p
   }//title_question
+}//#question
 
-  .wrap_tab {
-    width: 90%;
-    height: 100%;
-    margin: 75px 0 0 0;
+  /*====================    SECTION   ADVANTAGES   ===========================*/
+  #advantages {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
 
-    input {
-      display: none;
+    .row {
+      margin-bottom: 40px;
+      .circle {
+        margin: auto;
+        width: 120px;
+        height: 120px;
+        img {
+          background: #ffffff;
+          box-shadow: inset 0 0 8px 2px #b7b7b7;
+        }//img
+      }//circle
+      p {
+        .med;
+      }
+    }//row
+  }//advantages
 
-      &:checked + label {
-        background: #1A7FB3; //#e63848;
-        color: #fff;
-      }//&:checked
-    }//input
-
-    input[id="tab-1"]:checked ~ .content .tab-1,
-    input[id="tab-2"]:checked ~ .content .tab-2,
-    input[id="tab-3"]:checked ~ .content .tab-3 {
-      display: block;
-      transition: 0.5s;
-    }//input:checked
-
-    label {
-      cursor: pointer;
-      display: inline-block;
-      width: 32.95%;
-      padding: 10px 10px;
-      margin-bottom: 0;
-      background: #fff;
-      border-radius: 5px 5px 0 0;
-      .med;
-      text-transform: uppercase;
-      text-align: center;
-    }//label
-
-    .content {
-      position: relative;
-
-      article {
-        position: absolute;
-        display: none;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        padding: 30px 0px 15px 0px;
-        border-top: 5px solid #1A7FB3;
-        // border-bottom: 5px solid #e63848;
-        text-transform: uppercase;
-        // border-radius: 0px 0px 5px 5px;
-        // border: 1px solid red;
-
-        ul {
-          list-style-type: square;
-          li {
-            padding: 10px;
-            color: #e63848;
-            span {
-              color: #666666;
-              .med;
-              font-size: 16px;
-            }//span
-            .bonus {
-              color: #e63848;
-            }
-          }//li
-        }//ul
-      }//article
-    }//content
-  }//wrap_tab
-
+  /*====================    SECTION   FEEDBACK   ===========================*/
+#feedback {
   .wrap_question {// for forms title
-    padding: 0px 10px 10px 0;
+    padding: 40px 10px 30px 0px;
     width: 100%;
 
     h3 {
@@ -232,28 +192,34 @@ header {
       font-family: arial;
       text-align: center;
       text-transform: uppercase;
-      color: #1A7FB3;
-      font-weight: 400;
+      letter-spacing: 5px;
       .med;
+
+      span {
+        color: #e63848;
+      }//span
     }//h3
 
     form {
       box-sizing: border-box;
+      margin-top: 20px;
+      width: 100%;
       color: #666666;
       .med;
 
       p {
-        display: block;
+        display: inline-block;
+        width: 100%;
         padding: 0;
         margin: 0;
 
         input[name="name"],
         input[name="email"],
         input[name="phone"] {
-          margin: 5px 0;
+          margin: 30px 0;
           padding-left: 20px;
           width: 100%;
-          height: 40px;
+          height: 45px;
           border: 1px solid #bcbcbc;
           -webkit-border-radius: 5px;
           -moz-border-radius: 5px;
@@ -290,10 +256,10 @@ header {
 
       textarea[name="text_send"] {
         width: 100%;
-        height: 150px;
+        height: 200px;
         resize: none;
         overflow: hidden;
-        margin: 5px 0;
+        margin: 0px 0px 30px 0px;
         padding: 10px 0 0 20px;
         border: 1px solid #bcbcbc;
         cursor: pointer;
@@ -318,21 +284,20 @@ header {
 
       button {
         margin: auto;
-        opacity: 0,9;
+        opacity: 0.4;
         color: #ffffff;
-        width: 100%;
+        width: 30%;
         height: 45px;
-        background: #1A7FB3;
-        border: 2px solid #1A7FB3;
+        background: #e63848;
         text-transform: uppercase;
+        font-size: 12px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
         transition: 0.5s;
 
         &:hover {
-          background: #e63848;
-          border: 2px solid #e63848;
+          opacity: 1;
           color: #ffffff;
           transition: 0.5s;
           cursor: pointer;
@@ -340,102 +305,62 @@ header {
       }//botton
     }//form
   }//wrap_question
-}//#question
-
-/*============    SIMPLE TO COMPLEEX    ===========*/
-#simple_to_complex {
-  margin-top: 100px;
-  // border-bottom: 1px solid red;
-
-  .caption_simple_to_complex {
-    padding-bottom: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    .med;
-  }//caption_simple_to_complex
-
-  .atc_img {
-    margin-bottom: 10px;
-  }//atc_img
-
-  .signature {
-    margin-top: 30px;
-    border-top: 1px solid #e2e2e2;
-
-    p{
-      display: block;
-      padding-top: 10px;
-      text-transform: uppercase;
-      font-size: 18px;
-      color: #1A7FB3;//#e63848;
-      .med;
-    }
-  }
-}//simple_to_complex
+}
 
 /*============    MAP    ===========*/
 #map {
   margin-top: 100px;
+  padding-bottom: 40px;
+
 
   .col-sm-12 {
     padding: 0;
   }
 
-  h2 {
+  h3 {
+    letter-spacing: 5px;
     text-transform: uppercase;
     text-align: center;
     .med;
+    span {
+      color: #e63848;
+    }
   }
 
   .map_wrap {
     margin-top: 50px;
+    border: 1px solid #adadad;
+    // padding-bottom: 50px;
+    // border-bottom: 5px solid #e63848;
   }
 }
 
 /*============    FOOTER    ===========*/
 footer {
-  // margin-top: 100px;
+  padding-top: 40px;
   height: 300px;
-  background: #2e2e2e;
-  color: #dbdbdb;
+  color: #737373;
+  border-bottom: 5px solid #e63848;
+  // background: #404040;
   .med;
 
-  .wrap_content_foot {
-    .contacts {
-      margin: 60px 0 0;
-
-      .addresss_footer:before,
-      .email_footer:before,
-      .fax_footer:before,
-      .phone_footer:before {
-        content: " ";
-        width: 20px;
-        height: 20px;
-        display: inline-block;
-        vertical-align: bottom;
-        margin-right: 10px;
-        background: url("../img/footer_sprite.png") no-repeat;
-      }
-
-      .addresss_footer:before {background-position: -55px 1px;}
-         .phone_footer:before {background-position: -18px 1px;}
-           .email_footer:before {background-position: 1px 1px;}
-           .fax_footer:before {background-position: -36px 1px;}
+    .contacts,
+    .address {
 
       p {
-        padding-top: 10px;
+        display: inline-block;
+        padding: 10px;
 
         a {
           text-decoration: none;
-          color: #dbdbdb;
+          color: #737373;
         }
       }
     }
 
-    .logo_fot_wrap {
-      margin-top: 100px;
-      opacity: 0.6;
-    }
+  .logo_fot_wrap {
+    margin-top: 10px;
+    opacity: 0.6;
   }
 }
 
