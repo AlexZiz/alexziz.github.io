@@ -21,7 +21,7 @@
     <![endif]-->
   </head>
   <body>
-
+     <dir id="toTop" class="hidden-xs"></dir> <!-- Кнопка НАВЕРХ -->
     <header>
       <div class="container">
         <div class="row">
@@ -232,6 +232,21 @@
 
           //анимируем переход на расстояние - top за 1500 мс
           $('body,html').animate({scrollTop: top}, 500);
+        });
+      });
+    </script>
+    <!-- плавный скролл наверх -->
+    <script type="text/javascript">
+      $(function() {
+        $(window).scroll(function() {
+          if($(this).scrollTop() != 0) {
+            $('#toTop').fadeIn();
+          } else {
+            $('#toTop').fadeOut();
+          }
+        });
+        $('#toTop').click(function() {
+          $('body,html').animate({scrollTop:0},800);
         });
       });
     </script>

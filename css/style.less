@@ -51,6 +51,36 @@ body {
   clear: both;
 }
 
+/*============    Кнопка Наверх    ===========*/
+#toTop {
+  display: none;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+	bottom: 50px;
+	right: 70px;
+  width: 70px;
+	padding:10px;
+	border-radius: 50%;
+	border: 2px solid #666666;
+	cursor: pointer;
+	z-index: 100;
+  opacity: .5;
+  background: url(../img/bot_up/b_w.png) no-repeat center center;
+  -wevkit-transition: .3s;
+     -moz-transition: .3s;
+       -o-transition: .3s;
+          transition: .3s;
+	&:hover {
+    opacity: 1;
+		border: 2px solid #e63848;
+		background: url(../img/bot_up/red.png) no-repeat center center;
+    -wevkit-transition: .3s;
+       -moz-transition: .3s;
+         -o-transition: .3s;
+            transition: .3s;
+	}
+}
 
 /*============    HEADER   ===========*/
 header {
@@ -403,7 +433,6 @@ footer {
     opacity: 0.6;
   }
 }
-
 /*============    	ADAPTING    ===========*/
 
 @media(min-width:0px) and (max-width:320px)  {
