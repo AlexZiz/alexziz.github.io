@@ -165,10 +165,10 @@ header {
       width: 300px;
       padding: 15px 20px;
       border-radius: 5px;
-      background: #fff;
-      border: 1px solid #fff;
-      opacity: 0.4;
-      color: #666666;
+      border: 2px solid #fff;
+      opacity: 0.6;
+      text-decoration: none;
+      color: #fff;
       -wevkit-transition: .3s;
          -moz-transition: .3s;
            -o-transition: .3s;
@@ -176,8 +176,7 @@ header {
 
       &:hover {
         opacity: 1;
-        text-decoration: none;
-        border: 1px solid #e63848;
+        border: 2px solid #e63848;
         -wevkit-transition: .3s;
 				   -moz-transition: .3s;
 					   -o-transition: .3s;
@@ -257,7 +256,7 @@ header {
           padding-left: 20px;
           width: 100%;
           height: 45px;
-          border: 1px solid #bcbcbc;
+          border: 2px solid #bcbcbc;
           -webkit-border-radius: 5px;
           -moz-border-radius: 5px;
           border-radius: 5px;
@@ -297,15 +296,14 @@ header {
         resize: none;
         overflow: hidden;
         margin: 18px 0px 0px 0px;
-        padding: 10px 0 0 20px;
-        border: 1px solid #bcbcbc;
+        padding: 18px 0 0 20px;
+        border: 2px solid #bcbcbc;
         cursor: pointer;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
         transition: 0.5s;
         outline: none;
-
         &:hover {
           background: #ffe3e3;
           transition: 0.5s;
@@ -321,21 +319,26 @@ header {
 
       button {
         margin:  20px auto;
-        opacity: 0.4;
-        color: #ffffff;
-        width: 30%;
-        height: 45px;
-        background: #e63848;
-        text-transform: uppercase;
-        font-size: 12px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
+        padding: 15px 20px;
+        width: 300px;
+        background: none;
+        border: 2px solid #bcbcbc; // #e63848;
         transition: 0.5s;
+        opacity: 0.9;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 12px;
+        color: #666666;
+
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+
 
         &:hover {
           opacity: 1;
-          color: #ffffff;
+          border: 2px solid #e63848; //#bcbcbc;
+          color: #e63848;
           transition: 0.5s;
           cursor: pointer;
         }//:hover botton
