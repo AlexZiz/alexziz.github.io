@@ -50,7 +50,7 @@
         </div>
         <div class="row">
          <div class="col-sm-12">
-           <div class="botton_application text-center">
+           <div class="botton_application" align="center">
              <a href="#feedback">Оставить заявку</a>
            </div>
          </div>
@@ -216,6 +216,24 @@
               $("html").niceScroll({cursorcolor:"#000"});
           }
       );
+    </script>
+    <!-- Плавный скролл при нажатии на якорную ссылку -->
+    <script>
+      $(document).ready(function(){
+        $(".botton_application").on("click","a", function (event) {
+          //отменяем стандартную обработку нажатия по ссылке
+          event.preventDefault();
+
+          //забираем идентификатор бока с атрибута href
+          var id  = $(this).attr('href'),
+
+          //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+
+          //анимируем переход на расстояние - top за 1500 мс
+          $('body,html').animate({scrollTop: top}, 500);
+        });
+      });
     </script>
   </body>
 </html>
