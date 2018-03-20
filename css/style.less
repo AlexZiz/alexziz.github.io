@@ -39,6 +39,11 @@
   font-family: 'MontserratLight';
 }
 
+button:focus,
+button:focus, {
+  outline: 0;
+  outline-offset: 0;
+}
 /*============    BODY    ===========*/
 body {
   font-family: 'Montserrat', sans-serif;
@@ -320,7 +325,7 @@ header {
                       input[name="phone"]::placeholder {color: #716f6f;}
       }//p
 
-      textarea[name="text_send"] {
+      textarea[name="massage"] {
         width: 100%;
         height: 207px;
         resize: none;
@@ -433,6 +438,50 @@ footer {
     opacity: 0.6;
   }
 }
+
+/*============      SEND-PAGE    ===========*/
+
+section#thank_you {
+
+  .wrapp-content {
+    margin: auto;
+    margin-top: 100px;
+    height: 100vh;
+
+    h2 {
+      padding: 20px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+
+      span {
+        color: #e63848;
+      }
+    }
+
+    p {
+      padding-top: 50px;
+      font-size: 18px;
+    }
+
+    a {
+      display: block;
+      margin-top: 100px;
+      width: 400px;
+      padding: 20px;
+      border: 2px solid #666666;
+      border-radius: 5px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      text-decoration: none;
+      color: #666666;
+
+      &:hover {
+        border: 2px solid #e63848;
+      }//$:hover
+    }//a
+  }//wrapp-content
+}//section#thank_you
+
 /*============    	ADAPTING    ===========*/
 
 @media(min-width:0px) and (max-width:320px)  {

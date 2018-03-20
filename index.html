@@ -112,21 +112,21 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="wrap_question" align="center">
-              <h3><span>О</span>ставьте <span>з</span>аявку</h3>
-              <form action="">
+              <h3><span>о</span>ставьте <span>з</span>аявку</h3>
+              <form>
                 <div class="row">
                   <div class="col-sm-6">
                     <p><input name="name" type="text" placeholder="Имя..."></p>
-                    <p><input name="email" type="text" placeholder="Email..."></p>
-                    <p><input name="phone" type="text" placeholder="Телефон..."></p>
+                    <p><input name="email" type="email" placeholder="Email..."></p>
+                    <p><input name="phone" type="phone" placeholder="Телефон..."></p>
                   </div>
                   <div class="col-sm-6">
-                    <textarea name="text_send" id="" placeholder="Оставьте сообщение здесь..."></textarea>
+                    <textarea name="massage" placeholder="Оставьте сообщение здесь..."></textarea>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-sm-12">
-                    <button type="button" name="button">Отправить</button>
+                    <button type="submit">Отправить</button>
                   </div>
                 </div>
               </form>
@@ -180,23 +180,6 @@
       </div>
     </footer>
 
-    <!-- Modal -->
-        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
-              </div>
-              <div class="modal-body">
-               <div class="row">
-
-               </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script> -->
@@ -223,13 +206,10 @@
         $(".botton_application").on("click","a", function (event) {
           //отменяем стандартную обработку нажатия по ссылке
           event.preventDefault();
-
           //забираем идентификатор бока с атрибута href
           var id  = $(this).attr('href'),
-
           //узнаем высоту от начала страницы до блока на который ссылается якорь
             top = $(id).offset().top;
-
           //анимируем переход на расстояние - top за 1500 мс
           $('body,html').animate({scrollTop: top}, 500);
         });
