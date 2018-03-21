@@ -41,10 +41,13 @@ $(window).ready(function(){
             })
             .done(function(msg) {
                 if(msg === "OK"){
-                    var result = "<div = 'bg-success'>Спасибо за заявку! Мы вам перезвоним!</div>"
-                    form.html(result);
+                    var result = "send-page.html"
+                    location.replace(result)
+                    // var result = "<div = 'bg-success'>Спасибо за заявку! Мы вам перезвоним!</div>"
+                    // form.html(result);
                 }else{
-                    form.html(msg);
+                    location.replace("404.html")
+                    //form.html(msg);
                 }
             })
             .always(function() {
@@ -64,7 +67,7 @@ $(window).ready(function(){
                     val = input.val(),
                     formGroup = input.parents('.form-group'),
                     //label = formGroup.find('label').text().toLowerCase(),
-                    textError = 'Обязательное полен';
+                    textError = 'Обязательное поле';
 
                 if(val.length === 0){
                     formGroup.addClass('has-error').removeClass('has-success');
