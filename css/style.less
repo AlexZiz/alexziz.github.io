@@ -466,6 +466,19 @@ section#thank_you {
     }
   }//#question
 
+  #advantages {
+    min-height: 400px;
+    .row {
+      p {
+        font-size: 11px;
+      }
+      .circle {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }//#advantages
+
   #feedback {
     .wrap_question {
       padding-top: 20px;
@@ -473,11 +486,14 @@ section#thank_you {
         font-size: 18px;
       }
       form {
+        textarea[name="massage"] {
+          height: 120px;
+        }//textarea
         button {
-          width: 280px;
-        }
-      }
-    }
+          width: 100%;
+        }//button
+      }//form
+    }//wrap_question
   }//#feedback
 
   #map {
@@ -530,12 +546,23 @@ section#thank_you {
        h3 {
         font-size: 18px;
       }
-    }
+      form {
+        textarea[name="massage"] {
+          height: 120px;
+        }//textarea
+        button {
+          width: 100%;
+        }//button
+      }//form
+    }//.wrap_question
   }//#feedback
 
   #advantages {
     min-height: 400px;
     .row {
+      p {
+        font-size: 11px;
+      }
       .circle {
         width: 80px;
         height: 80px;
@@ -584,10 +611,10 @@ section#thank_you {
 }//@media(min-width:993px) and (max-width:1200px)
 
 //for iphone 5s gorizontal
-@media(min-width:568px) and (max-width:600px) {
-  header {
-    .phone_hed {
-      text-align: center;
-    }
-  }//header
-}//@media(min-width:481px) and (max-width:768px)
+// @media(min-width:568px) and (max-width:600px) {
+//   header {
+//     .phone_hed {
+//       text-align: center;
+//     }
+//   }//header
+//}//@media(min-width:481px) and (max-width:768px)
