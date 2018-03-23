@@ -73,7 +73,7 @@ $(window).ready(function(){
                     formGroup.addClass('has-error').removeClass('has-success');
                     input.tooltip({
                         trigger: 'manual',
-                        placement: 'left',
+                        placement: 'top',
                         title: textError
                     }).tooltip('show');
                     valid = false;

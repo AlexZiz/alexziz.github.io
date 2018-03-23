@@ -32,9 +32,11 @@
 .bold {
   font-family: 'MontserratBold';
 }
+
 .med {
   font-family: 'MontserratMedium';
 }
+
 .light {
   font-family: 'MontserratLight';
 }
@@ -44,6 +46,7 @@ button:focus, {
   outline: 0;
   outline-offset: 0;
 }
+
 /*============    BODY    ===========*/
 body {
   font-family: 'Montserrat', sans-serif;
@@ -95,30 +98,25 @@ header {
   -webkit-box-shadow: 0 1px 1px 0 rgba(212,212,212,1);
   -moz-box-shadow: 0 1px 1px 0 rgba(212,212,212,1);
   box-shadow: 0 1px 1px 0 rgba(212,212,212,1);
-
   .logotype {
     margin-top: 20px;
     margin-bottom: 20px;
   }//logotype
-
   .text_logo {
     h3 {
       letter-spacing: 3px;
       margin-top: 23px;
       text-transform: uppercase;
       .bold;
-
       span {
         color: #e63848;
       }//span
     }//h2
   }//text_logo
-
   .phone_hed {
     margin-top: 20px;
     text-align: right;
     text-transform: uppercase;
-
     h4 {
       a {
         .light;
@@ -126,11 +124,9 @@ header {
         font-weight: bold;
         color: #585858;
         // font-size: 26px;
-
         &:hover {
           text-decoration: none;
         }//:&hover
-
         &:before {
           content: " ";
           display: inline-block;
@@ -143,7 +139,6 @@ header {
         }//&:before
       }//a
     }//h3
-
     p {
       font-size: 11px;
       // margin-top: 5px;
@@ -157,26 +152,21 @@ header {
   height: 460px;
   padding-top: 100px;
   background: url("../img/bg_question.png") no-repeat 23% 98%;
-
   .title_question {
     .bold;
     color: #FFFFFF;
-
     h2 {
       letter-spacing: 4px;
       text-transform: uppercase;
       line-height: 150%;
       font-size: 36px;
-
       small {
         color: #FFFFFF;
       }
-
       span:nth-child(3) {
         color: #FFFFFF;//#e63848
         .bold;
       }
-
       span:nth-child(4) {
         color: #FFFFFF;
         .bold;
@@ -194,7 +184,6 @@ header {
 
   .botton_application {
     margin: 40px auto;
-
     a {
       display: block;
       width: 300px;
@@ -208,7 +197,6 @@ header {
          -moz-transition: .3s;
            -o-transition: .3s;
               transition: .3s;
-
       &:hover {
         opacity: 1;
         border: 2px solid #e63848;
@@ -227,13 +215,10 @@ header {
     padding-bottom: 20px;
     min-height: 460px;
     border-bottom: 1px solid #e0e0e0;
-
     .row {
-
       #block1,#block2,#block3,#block4,#block5,#block6 {
         display: none;
       }
-
       margin-bottom: 40px;
       .circle {
         margin: auto;
@@ -253,11 +238,9 @@ header {
   /*====================    SECTION   FEEDBACK   ===========================*/
 #feedback {
   border-bottom: 1px solid #e0e0e0;
-
   .wrap_question {// for forms title
     padding: 40px 10px 30px 0px;
     width: 100%;
-
     h3 {
       padding-top: 10px;
       font-family: arial;
@@ -265,25 +248,21 @@ header {
       text-transform: uppercase;
       letter-spacing: 5px;
       .med;
-
       span {
         color: #e63848;
       }//span
     }//h3
-
     form {
       box-sizing: border-box;
       margin-top: 20px;
       width: 100%;
       color: #666666;
       .med;
-
       p {
         display: block;
         width: 100%;
         padding: 0;
         margin: 0;
-
         input[name="name"],
         input[name="email"],
         input[name="phone"] {
@@ -299,7 +278,6 @@ header {
           cursor: pointer;
           transition: 0.5s;
           outline: none;
-
           &:hover {
             background: #ffeded;
             transition: 0.5s;
@@ -324,7 +302,6 @@ header {
                   input[name="phone"]:-moz-placeholder {color: #716f6f;}
                       input[name="phone"]::placeholder {color: #716f6f;}
       }//p
-
       textarea[name="massage"] {
         width: 100%;
         height: 207px;
@@ -351,7 +328,6 @@ header {
                 textarea[name="text_send"]:-moz-placeholder {color: #716f6f;}
                     textarea[name="text_send"]::placeholder {color: #716f6f;}
 
-
       button {
         margin:  20px auto;
         padding: 15px 20px;
@@ -364,12 +340,9 @@ header {
         letter-spacing: 5px;
         font-size: 12px;
         color: #666666;
-
         -webkit-border-radius: 5px;
            -moz-border-radius: 5px;
                 border-radius: 5px;
-
-
         &:hover {
           opacity: 1;
           border: 2px solid #e63848; //#bcbcbc;
@@ -386,12 +359,9 @@ header {
 #map {
   margin-top: 100px;
   padding-bottom: 40px;
-
-
   .col-sm-12 {
     padding: 0;
   }
-
   h3 {
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -401,7 +371,6 @@ header {
       color: #e63848;
     }
   }
-
   .map_wrap {
     margin-top: 50px;
     border: 1px solid #adadad;
@@ -418,14 +387,11 @@ footer {
   border-bottom: 5px solid #e63848;
   // background: #404040;
   .med;
-
     .contacts,
     .address {
-
       p {
         display: inline-block;
         padding: 10px;
-
         a {
           text-decoration: none;
           color: #737373;
@@ -439,30 +405,25 @@ footer {
   }
 }
 
-/*============      SEND-PAGE    ===========*/
+/*===========================      SEND-PAGE   =================== ===========*/
 
 section#thank_you {
-
   .wrapp-content {
     margin: auto;
     margin-top: 100px;
     height: 100vh;
-
     h2 {
       padding: 20px;
       text-transform: uppercase;
       letter-spacing: 5px;
-
       span {
         color: #e63848;
       }
     }
-
     p {
       padding-top: 50px;
       font-size: 18px;
     }
-
     a {
       display: block;
       margin-top: 100px;
@@ -474,7 +435,6 @@ section#thank_you {
       letter-spacing: 5px;
       text-decoration: none;
       color: #666666;
-
       &:hover {
         border: 2px solid #e63848;
       }//$:hover
@@ -482,7 +442,7 @@ section#thank_you {
   }//wrapp-content
 }//section#thank_you
 
-/*============    	ADAPTING    ===========*/
+/*===========================    	ADAPTING    ================================*/
 
 @media(min-width:0px) and (max-width:320px)  {
   header {
@@ -493,16 +453,13 @@ section#thank_you {
 
   #question {
     padding-top: 10px;
-
+    height: 450px;
     .title_question {
-
       h2 {
         font-size: 26px;
       }
     }
-
     .botton_application {
-
       a {
         width: 250px;
       }
@@ -510,13 +467,11 @@ section#thank_you {
   }//#question
 
   #feedback {
-
     .wrap_question {
       padding-top: 20px;
        h3 {
         font-size: 18px;
       }
-
       form {
         button {
           width: 280px;
@@ -530,46 +485,39 @@ section#thank_you {
     h3 {
       font-size: 18px;
     }
-
     .map_wrap {
       margin: 0 10px 0 10px;
     }
-  }
+  }//#map
 
   footer {
     padding-top: 10px;
     height: auto;
-
     .logo_fot_wrap {
       padding-bottom: 20px;
     }
-
     .contacts p,
     .address p {
       margin-bottom: 0;
     }
   }//footer
-}
-
+}//@media(min-width:0px) and (max-width:320px)
 
 //==============================================================================
 @media(min-width:321px) and (max-width:480px) {
   header {
-
     .phone_hed {
       text-align: center;
     }
   }//header
 
   #question {
-    padding-top: 30px;
-
+    padding-top: 10px;
+    height: 350px;
     .title_question {
-
       h2 {
         font-size: 26px;
       }
-
       p {
         font-size: 12px;
       }
@@ -577,7 +525,6 @@ section#thank_you {
   }//question
 
   #feedback {
-
     .wrap_question {
       padding-top: 20px;
        h3 {
@@ -586,49 +533,56 @@ section#thank_you {
     }
   }//#feedback
 
+  #advantages {
+    min-height: 400px;
+    .row {
+      .circle {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }//#advantages
 
   #map {
     margin-top: 20px;
     h3 {
       font-size: 18px;
     }
-
     .map_wrap {
       margin: 0 10px 0 10px;
     }
-  }
+  }//#map
 
   footer {
     padding-top: 10px;
     height: auto;
-
     .logo_fot_wrap {
       padding-bottom: 20px;
     }
-
     .contacts p,
     .address p {
       margin-bottom: 0;
     }
   }//footer
-}
+}//@media(min-width:321px) and (max-width:480px)
 
 //==============================================================================
 @media(min-width:481px) and (max-width:768px) {
   #question {
     padding-top: 30px;
   }
-}
+}//@media(min-width:481px) and (max-width:768px)
 
 @media(min-width:769px) and (max-width:992px) {
   #question {
     padding-top: 50px;
   }
-}
+}//@media(min-width:769px) and (max-width:992px)
 
 @media(min-width:993px) and (max-width:1200px) {
 
-}
+}//@media(min-width:993px) and (max-width:1200px)
+
 //for iphone 5s gorizontal
 @media(min-width:568px) and (max-width:600px) {
   header {
@@ -636,4 +590,4 @@ section#thank_you {
       text-align: center;
     }
   }//header
-}
+}//@media(min-width:481px) and (max-width:768px)
