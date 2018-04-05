@@ -1,6 +1,6 @@
 <?php
 
-	define("CONTACT_FORM", 'alexb5@suvar.ru');
+	define("CONTACT_FORM", 'wfn@mail.ru');
 
 	function ValidateEmail($value){
 		$regex = '/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i';
@@ -22,6 +22,8 @@
 		$phone = stripslashes($_POST['phone']);
 		$email = stripslashes($_POST['email']);
 		$massage = stripslashes($_POST['massage']);
+		$mail_server = 'postmaster@suvarlog.nichost.ru';
+		$name_server = 'siburo.info';
 		$subject = 'Заявка с сайта SIB.RU';
 		$error = '';
 		$message = '
@@ -43,8 +45,8 @@
 
 		if(!$error){
 			$mail = mail(CONTACT_FORM, $subject, $message,
-			     "From: ".$name." <".$email.">\r\n"
-			    ."Reply-To: ".$email."\r\n"
+			     "From: ".$name_server." <".$mail_server.">\r\n"
+			    ."Reply-To: ".$mail_server."\r\n"
 			    ."Content-type: text/html; charset=utf-8 \r\n"
 			    ."X-Mailer: PHP/" . phpversion());
 
